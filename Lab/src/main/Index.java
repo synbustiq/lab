@@ -52,11 +52,15 @@ public class Index {
 	 */
 	public Index() {
 		initialize();
-		database.database();
 		createTable();
 	}
 
 	public void createTable() {
+		try {
+			database.database();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		String doctorTable = "create table doctor(id int(11)AUTO_INCREMENT PRIMARY KEY,"
 				+ "doctorName varchar(255),department varchar(255),doorNo varchar(255),"
 				+ "streetInfo varchar(255),areaName varchar(255),cityName varchar(255),"
@@ -86,6 +90,7 @@ public class Index {
 		String reportTable = "create table report(id int(11)AUTO_INCREMENT PRIMARY KEY,"
 				+ "billNo int(11),testNo int(11),testName varchar(255),testRate varchar(255),"
 				+ "normalValue text,testValue varchar(255))";
+
 		try {
 			DatabaseMetaData dmd = connection.getConnection().getMetaData();
 			ResultSet set = dmd.getTables(null, null, "doctor", null);

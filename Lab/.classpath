@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry excluding="jasper/" kind="src" path="src"/>
+	<classpathentry kind="src" path="Jars"/>
+	<classpathentry kind="src" path="src/jasper"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mehrish Comp/eclipse-workspace/Lab/Jars/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mehrish Comp/eclipse-workspace/Lab/Jars/rs2xml.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mehrish Comp/eclipse-workspace/Lab/Jars/swingx-core-1.6.2.jar"/>
+	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_DEPENDENCIES_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mehrish Comp/eclipse-workspace/Lab/Jars/log4j-1.2.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Mehrish Comp/eclipse-workspace/Lab/Jars/jasperreports.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

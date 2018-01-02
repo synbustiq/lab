@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.0.final using JasperReports Library version 6.5.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="4dc3e0ab-74cf-4aeb-9518-d105e56c9dbc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\jasper\DataAdapter.xml"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="0aa96b91-60a8-4fd1-9ed8-a8aa18e39c69">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\jasper\DataAdapter.xml"/>
+		<parameter name="id" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select * from report where billNo =  $P{id}]]>
+		</queryString>
+		<field name="id" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="id"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+		<field name="billNo" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="billNo"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+		<field name="testNo" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="testNo"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+		<field name="testName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="testName"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+		<field name="testRate" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="testRate"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+		<field name="normalValue" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="normalValue"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+		<field name="testValue" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="testValue"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+		</field>
+	</subDataset>
+	<parameter name="id" class="java.lang.String"/>
+	<parameter name="patientName" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="sex" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="doctorName" class="java.lang.String"/>
+	<parameter name="mobile" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select * from report where billNo =  $P{id}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<field name="billNo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="billNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<field name="testNo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="testNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<field name="testName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="testName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<field name="testRate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="testRate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<field name="normalValue" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="normalValue"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<field name="testValue" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="testValue"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="report"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="60" width="80" height="20" uuid="920bbec0-8e16-4a5e-862d-a1ee286c9f8e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="89" width="80" height="20" uuid="55024156-4b71-486f-a650-7b8d6a918c5a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Sex]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="30" width="10" height="20" uuid="3b82bb4b-3591-442a-bcfb-2cedc05d74b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="60" width="10" height="20" uuid="88eb4656-7d95-4593-9e92-a093db9afbe7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="89" width="10" height="20" uuid="e17fad4c-b7d8-4404-8b68-d6e8f896d71f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="30" width="90" height="20" uuid="732b47ae-fcb0-411f-9155-d758121758b0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{patientName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="60" width="90" height="20" uuid="910281f8-fb67-4e63-a787-822f02e285f0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="89" width="90" height="20" uuid="76702074-76e0-4527-9878-95fdd99f1ebf"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{sex}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="30" width="80" height="20" uuid="12e95947-ff48-405f-a4b2-c68e8f0a28e4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="10" height="20" uuid="c8e08469-2b7c-419a-93fc-e9ddf9c85ce9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="465" y="0" width="90" height="20" uuid="0bac2231-b6f6-4491-96ca-f0eff7e0324a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="60" width="80" height="20" uuid="a187d2a5-4e60-4515-9b13-9538f3e43bb9"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Doctor Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="60" width="10" height="20" uuid="4b6309d8-2c39-4a24-b8e0-0a5de6055fcd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="89" width="10" height="20" uuid="89f9dffc-4f81-4022-867f-c1572ae20e5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="465" y="60" width="90" height="20" uuid="a7ad5ae5-31c3-4156-964a-4fccf2b65227"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{doctorName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="89" width="90" height="20" uuid="b316919d-17ad-4fce-b805-53dd401fad01"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{mobile}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="0" width="80" height="20" uuid="c704bca3-77d4-4e62-841a-869fbf273077"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Invoice No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="30" width="10" height="20" uuid="43871127-3c18-431a-8c89-768f10db4c40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="465" y="30" width="90" height="20" uuid="efba62ed-ae75-4072-89cb-34c16a4364d3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="89" width="80" height="20" uuid="047c9b2c-8bcd-40b3-8158-5ff03cbe1b1e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="80" height="20" uuid="de9b3437-69c9-4b92-b1aa-cc7645cc37c2"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Patient Name]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50">
+			<staticText>
+				<reportElement x="180" y="18" width="190" height="20" uuid="92eccc9c-7691-4018-99d2-b8f7371cc452"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[TEST VALUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="18" width="185" height="20" uuid="57199039-30bf-419f-8fc6-e25c8bf168e0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NORMAL VALUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="18" width="180" height="20" uuid="5d5e6a18-d6ab-4bda-bffe-48321c393f32"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[TEST NAME]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="111" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="180" height="110" uuid="a165b03a-6701-4aeb-93df-989d13177280"/>
+				<textFieldExpression><![CDATA[$F{testName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="190" height="110" uuid="22ebfc85-3547-4887-ba73-c6a918a14a00"/>
+				<textFieldExpression><![CDATA[$F{testValue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="110" uuid="7484243d-b794-47f4-8604-bddbf14531c1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{normalValue}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30">
+			<staticText>
+				<reportElement x="410" y="0" width="100" height="30" uuid="cd689ac2-caae-46aa-a24b-38440b839c01"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sign]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="38" uuid="973e521c-712e-499b-a136-05010bc8405f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

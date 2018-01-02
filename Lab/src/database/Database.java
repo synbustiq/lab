@@ -10,10 +10,14 @@ public class Database {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "");
-			String sql = "create database lab";
+			String sql = "create database IF NOT EXISTS lab";
 			Statement statement = connection.createStatement();
-			statement.executeUpdate(sql);
-			System.out.println("database created");
+			int set = statement.executeUpdate(sql);
+			if (set == 1) {
+				System.out.println("database created");
+			} else {
+				System.out.println("database already exits");
+			}
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();

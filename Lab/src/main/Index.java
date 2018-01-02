@@ -10,6 +10,7 @@ import java.awt.event.KeyEvent;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -52,15 +53,12 @@ public class Index {
 	 */
 	public Index() {
 		initialize();
+		database.database();
 		createTable();
 	}
 
 	public void createTable() {
-		try {
-			database.database();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
+
 		String doctorTable = "create table doctor(id int(11)AUTO_INCREMENT PRIMARY KEY,"
 				+ "doctorName varchar(255),department varchar(255),doorNo varchar(255),"
 				+ "streetInfo varchar(255),areaName varchar(255),cityName varchar(255),"
@@ -97,35 +95,40 @@ public class Index {
 			if (set.next()) {
 				System.out.println("doctor table already created");
 			} else {
-				executeQuery.executeQuery(doctorTable, "doctorTable");
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(doctorTable);
 				System.out.println("doctor table created");
 			}
 			ResultSet set1 = dmd.getTables(null, null, "lab", null);
 			if (set1.next()) {
 				System.out.println("lab table already created");
 			} else {
-				executeQuery.executeQuery(labTable, "labTable");
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(labTable);
 				System.out.println("lab table created");
 			}
 			ResultSet set2 = dmd.getTables(null, null, "test", null);
 			if (set2.next()) {
 				System.out.println("test table already created");
 			} else {
-				executeQuery.executeQuery(testTable, "testTable");
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(testTable);
 				System.out.println("test table created");
 			}
 			ResultSet set3 = dmd.getTables(null, null, "invoice", null);
 			if (set3.next()) {
 				System.out.println("invoice table already created");
 			} else {
-				executeQuery.executeQuery(invoiceTable, "invoiceTable");
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(invoiceTable);
 				System.out.println("invoice table created");
 			}
 			ResultSet set4 = dmd.getTables(null, null, "report", null);
 			if (set4.next()) {
 				System.out.println("report table already created");
 			} else {
-				executeQuery.executeQuery(reportTable, "reportTable");
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(reportTable);
 				System.out.println("report table created");
 			}
 		} catch (SQLException e) {

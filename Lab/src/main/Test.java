@@ -515,7 +515,7 @@ public class Test extends JFrame {
 				Boolean isSpecial = chckbxIsSpecial.isSelected();
 				Boolean isCulture = chckbxIsCulture.isSelected();
 
-				String sql = "insert into test(testName,rate1,rate2,departmentNo,sampleNo,inputType,methodtype,isSubTest,unit,digit,decimal,defaultValue,minValue,maxValue,isPicklist,formula,normalValue,isSpecial,isCulture) values('"
+				String sql = "insert into test(testName,rate1,rate2,departmentNo,sampleNo,inputType,methodtype,isSubTest,unit,digit,decimal_1,defaultValue_1,minValue_1,maxValue_1,isPicklist,formula,normalValue,isSpecial,isCulture) values('"
 						+ testName + "','" + rate1 + "','" + rate2 + "','" + departmentNo + "','" + sampleNo + "','"
 						+ inputType + "','" + methodType + "','" + isSubTest + "','" + unit + "','" + digit + "','"
 						+ decimal + "','" + defaultValue + "','" + minValue + "','" + maxValue + "','" + isPicklist
@@ -588,8 +588,8 @@ public class Test extends JFrame {
 				String sql = "update test set testName = '" + testName + "', rate1 ='" + rate1 + "', rate2 = '" + rate2
 						+ "',departmentNo ='" + departmentNo + "',sampleNo ='" + sampleNo + "',inputType ='" + inputType
 						+ "',methodType ='" + methodType + "',isSubTest ='" + isSubTest + "',unit ='" + unit
-						+ "',digit ='" + digit + "',decimal ='" + decimal + "',defaultValue ='" + defaultValue
-						+ "',minValue ='" + minValue + "',maxValue ='" + maxValue + "',isPicklist ='" + isPicklist
+						+ "',digit ='" + digit + "',decimal_1 ='" + decimal + "',defaultValue_1 ='" + defaultValue
+						+ "',minValue_1 ='" + minValue + "',maxValue_1 ='" + maxValue + "',isPicklist ='" + isPicklist
 						+ "',formula ='" + formula + "',normalValue ='" + normalValue + "',isSpecial ='" + isSpecial
 						+ "',isCulture ='" + isCulture + "' where id ='" + id + "'";
 				executeQuery.executeQuery(sql, "Updated");

@@ -57,33 +57,35 @@ public class Index {
 	}
 
 	public void createTable() {
-		String doctorTable = "create table doctor(id int(11)AUTO_INCREMENT PRIMARY KEY,doctorName varchar(255),"
-				+ "department varchar(255),doorNo varchar(255),streetInfo varchar(255),areaName varchar(255),"
-				+ "cityName varchar(255),pincode varchar(255),state varchar(255),phone varchar(255),"
-				+ "mobile varchar(255),email varchar(255),remarks varchar(255)";
+		String doctorTable = "create table doctor(id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "doctorName varchar(255),department varchar(255),doorNo varchar(255),"
+				+ "streetInfo varchar(255),areaName varchar(255),cityName varchar(255),"
+				+ "pincode varchar(255),state varchar(255),phone varchar(255),mobile varchar(255),"
+				+ "email varchar(255),remarks varchar(255))";
 
-		String labTable = "create table lab(id int(11)AUTO_INCREMENT PRIMARY KEY,labName varchar(255),"
-				+ "department varchar(255),doorNo varchar(255),streetInfo varchar(255),areaName varchar(255),"
-				+ "cityName varchar(255),pincode varchar(255),state varchar(255),phone varchar(255),"
-				+ "mobile varchar(255),email varchar(255),remarks varchar(255)";
+		String labTable = "create table lab(id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "labName varchar(255),department varchar(255),doorNo varchar(255),"
+				+ "streetInfo varchar(255),areaName varchar(255),cityName varchar(255),"
+				+ "pincode varchar(255),state varchar(255),phone varchar(255),mobile varchar(255),"
+				+ "email varchar(255),remarks varchar(255))";
 
-		String invoiceTable = "create table invoice(id int(11)AUTO_INCREMENT PRIMARY KEY,patientName varchar(255),"
-				+ "age varchar(255),sex varchar(255),address varchar(255),city varchar(255),"
-				+ "state varchar(255),mobile varchar(255),refferedBy varchar(255),labName varchar(255),"
-				+ "totalAmount int(11),concession int(11),otherCharges int(11),netAmount int(11),"
-				+ "receivedAmount int(11),balance int(11),date varchar(255)";
+		String invoiceTable = "create table invoice(id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "patientName varchar(255),age varchar(255),sex varchar(255),address varchar(255),"
+				+ "city varchar(255),state varchar(255),mobile varchar(255),refferedBy varchar(255),"
+				+ "labName varchar(255),totalAmount int(11),concession int(11),otherCharges int(11),"
+				+ "netAmount int(11),receivedAmount int(11),balance int(11),date varchar(255))";
 
-		String testTable = "create table test(id int(11)AUTO_INCREMENT PRIMARY KEY,testName varchar(255),"
-				+ "rate1 int(11),rate2 int(11),departmentNo varchar(255),sampleNo varchar(255),"
-				+ "inputType varchar(255),methodType varchar(255),isSubTest varchar(255),unit varchar(255),"
-				+ "digit varchar(255),decimal varchar(255),defaultValue varchar(255),minValue varchar(255),"
-				+ "maxValue varchar(255),isPicklist varchar(255),formula varchar(255),normalValue text(),"
-				+ "isSpecial varchar(255),isCulture varchar(255)";
+		String testTable = "create table test(id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "testName varchar(255),rate1 int(11),rate2 int(11),departmentNo varchar(255),"
+				+ "sampleNo varchar(255),inputType varchar(255),methodType varchar(255),"
+				+ "isSubTest varchar(255),unit varchar(255),digit varchar(255),decimal_1 varchar(255),"
+				+ "defaultValue_1 varchar(255),minValue_1 varchar(255),maxValue_1 varchar(255),"
+				+ "isPicklist varchar(255),formula varchar(255),normalValue text,"
+				+ "isSpecial varchar(255),isCulture varchar(255))";
 
-		String reportTable = "create table report(id int(11)AUTO_INCREMENT PRIMARY KEY,rate1 int(11),"
-				+ "rate1 int(11),departmentNo varchar(255),departmentNo varchar(255),normalValue text(),"
-				+ "departmentNo varchar(255)";
-
+		String reportTable = "create table report(id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "billNo int(11),testNo int(11),testName varchar(255),testRate varchar(255),"
+				+ "normalValue text,testValue varchar(255))";
 		try {
 			DatabaseMetaData dmd = connection.getConnection().getMetaData();
 			ResultSet set = dmd.getTables(null, null, "doctor", null);
@@ -91,31 +93,35 @@ public class Index {
 				System.out.println("doctor table already created");
 			} else {
 				executeQuery.executeQuery(doctorTable, "doctorTable");
-
+				System.out.println("doctor table created");
 			}
 			ResultSet set1 = dmd.getTables(null, null, "lab", null);
 			if (set1.next()) {
 				System.out.println("lab table already created");
 			} else {
 				executeQuery.executeQuery(labTable, "labTable");
+				System.out.println("lab table created");
 			}
 			ResultSet set2 = dmd.getTables(null, null, "test", null);
 			if (set2.next()) {
 				System.out.println("test table already created");
 			} else {
 				executeQuery.executeQuery(testTable, "testTable");
+				System.out.println("test table created");
 			}
 			ResultSet set3 = dmd.getTables(null, null, "invoice", null);
 			if (set3.next()) {
 				System.out.println("invoice table already created");
 			} else {
 				executeQuery.executeQuery(invoiceTable, "invoiceTable");
+				System.out.println("invoice table created");
 			}
 			ResultSet set4 = dmd.getTables(null, null, "report", null);
 			if (set4.next()) {
 				System.out.println("report table already created");
 			} else {
 				executeQuery.executeQuery(reportTable, "reportTable");
+				System.out.println("report table created");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

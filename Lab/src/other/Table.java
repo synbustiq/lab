@@ -14,7 +14,6 @@ public class Table {
 	DatabaseConnection dataBase = new DatabaseConnection();
 
 	public TableModel table(String name, String tableName) {
-		System.out.println("i have reached here table 1");
 
 		Connection connection = dataBase.getConnection();
 		PreparedStatement statement;

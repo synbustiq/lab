@@ -25,7 +25,6 @@ public class Database {
 						System.out.println("Database created successfully");
 					} else {
 						System.out.println("Database not created successfully");
-
 					}
 				}
 			}

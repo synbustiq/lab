@@ -32,7 +32,7 @@ import database.DatabaseConnection;
 import database.ExecuteQuery;
 import other.Table;
 
-public class Test extends JFrame {
+public class TestMaster extends JFrame {
 
 	/**
 	 * 
@@ -79,7 +79,7 @@ public class Test extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Test frame = new Test();
+					TestMaster frame = new TestMaster();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -124,7 +124,8 @@ public class Test extends JFrame {
 	 * Create the frame.
 	 */
 
-	public Test() {
+	public TestMaster() {
+		setTitle("Test");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1500, 800);
 		contentPane = new JPanel();

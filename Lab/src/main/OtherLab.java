@@ -32,13 +32,16 @@ import javax.swing.table.DefaultTableModel;
 import database.DatabaseConnection;
 import net.proteanit.sql.DbUtils;
 
-public class Doctor extends JFrame {
+public class OtherLab extends JFrame {
 
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable table;
 	private JTextField textField_id;
-	private JTextField textField_doctorName;
+	private JTextField textField_labName;
 	private JTextField textField_department;
 	private JTextField textField_doorNo;
 	private JTextField textField_streetInfo;
@@ -52,7 +55,8 @@ public class Doctor extends JFrame {
 	private JTextField textField_state;
 
 	DatabaseConnection dataBase = new DatabaseConnection();
-	static Doctor frameDoctor = new Doctor();
+	static OtherLab frameOtherlab = new OtherLab();
+	private JTextField textField_LabSearch;
 	private JButton btnAdd;
 	private JButton btnEdit;
 	private JButton btnDelete;
@@ -61,7 +65,6 @@ public class Doctor extends JFrame {
 	private JButton btnSearch;
 	private JButton btnExit;
 	private JButton btnUpdate;
-	private JTextField textField_doctorSearch;
 
 	/**
 	 * Launch the application.
@@ -70,7 +73,8 @@ public class Doctor extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frameDoctor.setVisible(true);
+
+					frameOtherlab.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -81,6 +85,22 @@ public class Doctor extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	public void executeQuery(String query, String message) {
+		Connection connection = dataBase.getConnection();
+		try {
+			Statement statement = connection.createStatement();
+			int set = statement.executeUpdate(query);
+			if (set == 1) {
+				refreshTable();
+				JOptionPane.showMessageDialog(null, "Data " + message + "Successfully");
+			} else {
+				JOptionPane.showMessageDialog(null, "Data Not " + message + "Successfully");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
 
 	public void table(String name, String tableName) {
 		Connection connection = dataBase.getConnection();
@@ -103,34 +123,16 @@ public class Doctor extends JFrame {
 		model.setRowCount(0);
 
 		// table function is called again to display refresh table
-		table("doctorName", "doctor");
-	}
-
-	public void executeQuery(String query, String message) {
-		Connection connection = dataBase.getConnection();
-		try {
-			Statement statement = connection.createStatement();
-			int set = statement.executeUpdate(query);
-			if (set == 1) {
-				JOptionPane.showMessageDialog(null, "Data " + message + "Successfully");
-
-				refreshTable();
-			} else {
-				JOptionPane.showMessageDialog(null, "Data Not " + message + "Successfully");
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
+		table("labName", "lab");
 	}
 
 	public void close() {
-		frameDoctor.setVisible(false);
+		frameOtherlab.setVisible(false);
 		dispose();
 	}
 
-	public Doctor() {
-		setTitle("Doctor");
+	public OtherLab() {
+		setTitle("Lab");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1000, 700);
@@ -141,24 +143,24 @@ public class Doctor extends JFrame {
 
 		JPanel panel = new JPanel();
 		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2));
-		panel.setBounds(10, 104, 296, 546);
+		panel.setBounds(10, 105, 296, 539);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
-		JLabel lblSearchByDoctor = new JLabel("Search by Doctor Name");
-		lblSearchByDoctor.setHorizontalAlignment(SwingConstants.CENTER);
-		lblSearchByDoctor.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblSearchByDoctor.setBounds(10, 11, 276, 38);
-		panel.add(lblSearchByDoctor);
+		JLabel lblSearchByLab = new JLabel("Search by Lab Name");
+		lblSearchByLab.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSearchByLab.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblSearchByLab.setBounds(10, 11, 276, 26);
+		panel.add(lblSearchByLab);
 
 		JPanel panel_2 = new JPanel();
 		panel_2.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panel_2.setBounds(10, 94, 276, 441);
+		panel_2.setBounds(10, 89, 276, 439);
 		panel.add(panel_2);
 		panel_2.setLayout(null);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 11, 256, 419);
+		scrollPane.setBounds(10, 11, 256, 420);
 		panel_2.add(scrollPane);
 
 		table = new JTable();
@@ -174,12 +176,12 @@ public class Doctor extends JFrame {
 					// display if it doesn't contain any value
 				} else {
 					try {
-						String sql = "select * from doctor where doctorName = '" + name + "'";
+						String sql = "select * from lab where labName = '" + name + "'";
 						PreparedStatement statement = dataBase.getConnection().prepareStatement(sql);
 						ResultSet set = statement.executeQuery();
 						while (set.next()) {
 							textField_id.setText(set.getString(1));
-							textField_doctorName.setText(set.getString(2));
+							textField_labName.setText(set.getString(2));
 							textField_department.setText(set.getString(3));
 							textField_doorNo.setText(set.getString(4));
 							textField_streetInfo.setText(set.getString(5));
@@ -199,50 +201,47 @@ public class Doctor extends JFrame {
 				}
 			}
 		});
-		table.setEnabled(false);
 		scrollPane.setViewportView(table);
 		table.setModel(new DefaultTableModel(new Object[][] {}, new String[] { "DoctorName" }));
 		table.setFont(new Font("Tahoma", Font.PLAIN, 15));
 
-		textField_doctorSearch = new JTextField();
-		textField_doctorSearch.setEditable(false);
-		textField_doctorSearch.addKeyListener(new KeyAdapter() {
+		textField_LabSearch = new JTextField();
+		textField_LabSearch.setEditable(false);
+		textField_LabSearch.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyReleased(KeyEvent e) {
-				String name = textField_doctorSearch.getText().trim();
+				String name = textField_LabSearch.getText().trim();
 				try {
-					String sql = "select doctorName from doctor where doctorName like '" + name + "%'  ";
+					String sql = "select labName from lab where labName like '" + name + "%'  ";
 					PreparedStatement statement = dataBase.getConnection().prepareStatement(sql);
 					ResultSet set = statement.executeQuery();
 					table.setModel(DbUtils.resultSetToTableModel(set));
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
-
 			}
 		});
-		textField_doctorSearch.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		textField_doctorSearch.setBounds(10, 51, 276, 32);
-		panel.add(textField_doctorSearch);
-		textField_doctorSearch.setColumns(10);
+		textField_LabSearch.setBounds(10, 50, 276, 34);
+		panel.add(textField_LabSearch);
+		textField_LabSearch.setColumns(10);
 
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new LineBorder(new Color(0, 0, 0), 2));
-		panel_1.setBounds(316, 104, 658, 546);
+		panel_1.setBounds(316, 102, 658, 548);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 
-		JLabel lblDoctorCode = new JLabel("Doctor Code");
-		lblDoctorCode.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblDoctorCode.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDoctorCode.setBounds(10, 11, 145, 33);
-		panel_1.add(lblDoctorCode);
+		JLabel lblLabCode = new JLabel("Lab Code");
+		lblLabCode.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblLabCode.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLabCode.setBounds(10, 11, 145, 33);
+		panel_1.add(lblLabCode);
 
-		JLabel lblDoctorName_1 = new JLabel("Doctor Name");
-		lblDoctorName_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDoctorName_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblDoctorName_1.setBounds(10, 55, 145, 33);
-		panel_1.add(lblDoctorName_1);
+		JLabel lblLabName_1 = new JLabel("Lab Name");
+		lblLabName_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLabName_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblLabName_1.setBounds(10, 55, 145, 33);
+		panel_1.add(lblLabName_1);
 
 		JLabel lblDepartment = new JLabel("Department");
 		lblDepartment.setHorizontalAlignment(SwingConstants.CENTER);
@@ -316,11 +315,11 @@ public class Doctor extends JFrame {
 		panel_1.add(textField_id);
 		textField_id.setColumns(10);
 
-		textField_doctorName = new JTextField();
-		textField_doctorName.setEditable(false);
-		textField_doctorName.setColumns(10);
-		textField_doctorName.setBounds(165, 57, 480, 33);
-		panel_1.add(textField_doctorName);
+		textField_labName = new JTextField();
+		textField_labName.setEditable(false);
+		textField_labName.setColumns(10);
+		textField_labName.setBounds(165, 57, 480, 33);
+		panel_1.add(textField_labName);
 
 		textField_department = new JTextField();
 		textField_department.setEditable(false);
@@ -394,10 +393,9 @@ public class Doctor extends JFrame {
 		panel_3.setLayout(null);
 
 		btnAdd = new JButton("Add");
-		btnAdd.setFocusPainted(false);
 		btnAdd.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				textField_doctorName.setEditable(true);
+			public void actionPerformed(ActionEvent arg0) {
+				textField_labName.setEditable(true);
 				textField_department.setEditable(true);
 				textField_doorNo.setEditable(true);
 				textField_streetInfo.setEditable(true);
@@ -410,8 +408,8 @@ public class Doctor extends JFrame {
 				textField_eMail.setEditable(true);
 				textField_remarks.setEditable(true);
 
-				textField_doctorSearch.setEditable(false);
-				textField_doctorSearch.setText(null);
+				textField_LabSearch.setEditable(false);
+				textField_LabSearch.setText(null);
 				table.setVisible(false);
 				table.setEnabled(false);
 
@@ -425,20 +423,20 @@ public class Doctor extends JFrame {
 				btnExit.setEnabled(false);
 			}
 		});
-		btnAdd.setBackground(Color.WHITE);
+		btnAdd.setIcon(new ImageIcon(OtherLab.class.getResource("/image/Actions-list-add-icon.png")));
 		btnAdd.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnAdd.setHorizontalTextPosition(SwingConstants.CENTER);
 		btnAdd.setVerticalAlignment(SwingConstants.TOP);
-		btnAdd.setIcon(new ImageIcon(Doctor.class.getResource("/image/Actions-list-add-icon.png")));
+		btnAdd.setHorizontalTextPosition(SwingConstants.CENTER);
 		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnAdd.setFocusPainted(false);
+		btnAdd.setBackground(Color.WHITE);
 		btnAdd.setBounds(0, 0, 102, 82);
 		panel_3.add(btnAdd);
 
 		btnEdit = new JButton("Edit");
 		btnEdit.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-
-				textField_doctorName.setEditable(true);
+			public void actionPerformed(ActionEvent e) {
+				textField_labName.setEditable(true);
 				textField_department.setEditable(true);
 				textField_doorNo.setEditable(true);
 				textField_streetInfo.setEditable(true);
@@ -451,8 +449,8 @@ public class Doctor extends JFrame {
 				textField_eMail.setEditable(true);
 				textField_remarks.setEditable(true);
 
-				textField_doctorSearch.setEditable(false);
-				textField_doctorSearch.setText(null);
+				textField_LabSearch.setEditable(false);
+				textField_LabSearch.setText(null);
 				table.setVisible(false);
 				table.setEnabled(false);
 
@@ -467,18 +465,17 @@ public class Doctor extends JFrame {
 			}
 		});
 		btnEdit.setEnabled(false);
-		btnEdit.setFocusPainted(false);
-		btnEdit.setIcon(new ImageIcon(Doctor.class.getResource("/image/document-edit-icon.png")));
+		btnEdit.setIcon(new ImageIcon(OtherLab.class.getResource("/image/document-edit-icon.png")));
 		btnEdit.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnEdit.setVerticalAlignment(SwingConstants.TOP);
 		btnEdit.setHorizontalTextPosition(SwingConstants.CENTER);
 		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnEdit.setFocusPainted(false);
 		btnEdit.setBackground(Color.WHITE);
 		btnEdit.setBounds(100, 0, 102, 82);
 		panel_3.add(btnEdit);
 
 		btnDelete = new JButton("Delete");
-		btnDelete.setEnabled(false);
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String id = textField_id.getText();
@@ -486,7 +483,7 @@ public class Doctor extends JFrame {
 					JOptionPane.showMessageDialog(null, "Please fill the Doctor Code");
 				} else {
 					try {
-						String sql = "delete from doctor where id  ='" + id + "'";
+						String sql = "delete from lab where id  ='" + id + "'";
 						Statement statement = dataBase.getConnection().createStatement();
 						statement.executeUpdate(sql);
 
@@ -494,7 +491,7 @@ public class Doctor extends JFrame {
 
 						JOptionPane.showMessageDialog(null, "Deleted successfully");
 
-						textField_doctorName.setEditable(false);
+						textField_labName.setEditable(false);
 						textField_department.setEditable(false);
 						textField_doorNo.setEditable(false);
 						textField_streetInfo.setEditable(false);
@@ -507,13 +504,13 @@ public class Doctor extends JFrame {
 						textField_eMail.setEditable(false);
 						textField_remarks.setEditable(false);
 
-						textField_doctorSearch.setEditable(false);
-						textField_doctorSearch.setText(null);
+						textField_LabSearch.setEditable(false);
+						textField_LabSearch.setText(null);
 						table.setVisible(false);
 						table.setEnabled(false);
 
 						textField_id.setText(null);
-						textField_doctorName.setText(null);
+						textField_labName.setText(null);
 						textField_department.setText(null);
 						textField_doorNo.setText(null);
 						textField_streetInfo.setText(null);
@@ -538,126 +535,24 @@ public class Doctor extends JFrame {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
-
 				}
 			}
 		});
-		btnDelete.setFocusPainted(false);
-		btnDelete.setIcon(new ImageIcon(Doctor.class.getResource("/image/delete-icon.png")));
+		btnDelete.setEnabled(false);
+		btnDelete.setIcon(new ImageIcon(OtherLab.class.getResource("/image/delete-icon.png")));
 		btnDelete.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnDelete.setVerticalAlignment(SwingConstants.TOP);
 		btnDelete.setHorizontalTextPosition(SwingConstants.CENTER);
 		btnDelete.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnDelete.setFocusPainted(false);
 		btnDelete.setBackground(Color.WHITE);
 		btnDelete.setBounds(200, 0, 102, 82);
 		panel_3.add(btnDelete);
 
-		btnCancel = new JButton("Cancel");
-		btnCancel.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				textField_doctorName.setEditable(false);
-				textField_department.setEditable(false);
-				textField_doorNo.setEditable(false);
-				textField_streetInfo.setEditable(false);
-				textField_areaName.setEditable(false);
-				textField_cityName.setEditable(false);
-				textField_pincode.setEditable(false);
-				textField_state.setEditable(false);
-				textField_phoneNo.setEditable(false);
-				textField_mobileNo.setEditable(false);
-				textField_eMail.setEditable(false);
-				textField_remarks.setEditable(false);
-
-				textField_doctorSearch.setEditable(false);
-				textField_doctorSearch.setText(null);
-				table.setVisible(false);
-				table.setEnabled(false);
-
-				textField_id.setText(null);
-				textField_doctorName.setText(null);
-				textField_department.setText(null);
-				textField_doorNo.setText(null);
-				textField_streetInfo.setText(null);
-				textField_areaName.setText(null);
-				textField_cityName.setText(null);
-				textField_pincode.setText(null);
-				textField_state.setText(null);
-				textField_phoneNo.setText(null);
-				textField_mobileNo.setText(null);
-				textField_eMail.setText(null);
-				textField_remarks.setText(null);
-
-				btnAdd.setEnabled(true);
-				btnEdit.setEnabled(false);
-				btnDelete.setEnabled(false);
-				btnSave.setVisible(true);
-				btnSave.setEnabled(false);
-				btnSearch.setEnabled(true);
-				btnUpdate.setVisible(false);
-				btnExit.setEnabled(true);
-			}
-		});
-		btnCancel.setFocusPainted(false);
-		btnCancel.setIcon(new ImageIcon(Doctor.class.getResource("/image/Actions-edit-undo-icon.png")));
-		btnCancel.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnCancel.setVerticalAlignment(SwingConstants.TOP);
-		btnCancel.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnCancel.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnCancel.setBackground(Color.WHITE);
-		btnCancel.setBounds(400, 0, 102, 82);
-		panel_3.add(btnCancel);
-
-		btnSearch = new JButton("Search");
-		btnSearch.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				btnAdd.setEnabled(false);
-				btnEdit.setEnabled(true);
-				btnDelete.setEnabled(true);
-				btnSave.setVisible(true);
-				btnSave.setEnabled(false);
-				btnSearch.setEnabled(false);
-				btnUpdate.setVisible(false);
-				btnExit.setEnabled(true);
-
-				textField_doctorSearch.setEditable(true);
-				table.setVisible(true);
-				table.setEnabled(true);
-			}
-		});
-		btnSearch.setFocusPainted(false);
-		btnSearch.setIcon(new ImageIcon(Doctor.class.getResource("/image/Zoom-icon.png")));
-		btnSearch.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnSearch.setVerticalAlignment(SwingConstants.TOP);
-		btnSearch.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnSearch.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnSearch.setBackground(Color.WHITE);
-		btnSearch.setBounds(500, 0, 102, 82);
-		panel_3.add(btnSearch);
-
-		btnExit = new JButton("Exit");
-		btnExit.setFocusPainted(false);
-		btnExit.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				close();
-			}
-		});
-		btnExit.setIcon(new ImageIcon(Doctor.class.getResource("/image/Actions-window-close-icon.png")));
-		btnExit.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnExit.setVerticalAlignment(SwingConstants.TOP);
-		btnExit.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnExit.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnExit.setBackground(Color.WHITE);
-		btnExit.setBounds(600, 0, 102, 82);
-		panel_3.add(btnExit);
-
 		btnSave = new JButton("Save");
-		btnSave.setBounds(300, 0, 102, 82);
-		panel_3.add(btnSave);
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String doctorName = textField_doctorName.getText();
+				String labName = textField_labName.getText();
 				String department = textField_department.getText();
 				String doorNo = textField_doorNo.getText();
 				String streetInfo = textField_streetInfo.getText();
@@ -670,13 +565,13 @@ public class Doctor extends JFrame {
 				String email = textField_eMail.getText();
 				String remarks = textField_remarks.getText();
 
-				String sql = "insert into doctor(doctorName,department,doorNo,streetInfo,areaName,cityName,pincode,state,phone,mobile,email,remarks)values ('"
-						+ doctorName + "','" + department + "','" + doorNo + "','" + streetInfo + "','" + areaName
-						+ "','" + cityName + "','" + pincode + "','" + state + "','" + phone + "','" + mobile + "','"
-						+ email + "','" + remarks + "')";
+				String sql = "insert into lab(labName,department,doorNo,streetInfo,areaName,cityName,pincode,state,phone,mobile,email,remarks)values ('"
+						+ labName + "','" + department + "','" + doorNo + "','" + streetInfo + "','" + areaName + "','"
+						+ cityName + "','" + pincode + "','" + state + "','" + phone + "','" + mobile + "','" + email
+						+ "','" + remarks + "')";
 				executeQuery(sql, "Inserted");
 
-				textField_doctorName.setEditable(false);
+				textField_labName.setEditable(false);
 				textField_department.setEditable(false);
 				textField_doorNo.setEditable(false);
 				textField_streetInfo.setEditable(false);
@@ -689,12 +584,12 @@ public class Doctor extends JFrame {
 				textField_eMail.setEditable(false);
 				textField_remarks.setEditable(false);
 
-				textField_doctorSearch.setEditable(false);
-				textField_doctorSearch.setText(null);
+				textField_LabSearch.setEditable(false);
+				textField_LabSearch.setText(null);
 				table.setVisible(false);
 				table.setEnabled(false);
 
-				textField_doctorName.setText(null);
+				textField_labName.setText(null);
 				textField_department.setText(null);
 				textField_doorNo.setText(null);
 				textField_streetInfo.setText(null);
@@ -718,40 +613,21 @@ public class Doctor extends JFrame {
 			}
 		});
 		btnSave.setEnabled(false);
-		btnSave.setFocusPainted(false);
-		btnSave.setIcon(new ImageIcon(Doctor.class.getResource("/image/Devices-media-floppy-icon.png")));
+		btnSave.setIcon(new ImageIcon(OtherLab.class.getResource("/image/Devices-media-floppy-icon.png")));
 		btnSave.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnSave.setVerticalAlignment(SwingConstants.TOP);
 		btnSave.setHorizontalTextPosition(SwingConstants.CENTER);
 		btnSave.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnSave.setFocusPainted(false);
 		btnSave.setBackground(Color.WHITE);
+		btnSave.setBounds(300, 0, 102, 82);
+		panel_3.add(btnSave);
 
-		btnUpdate = new JButton("Update");
-		btnUpdate.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				String id = textField_id.getText();
-				String doctorName = textField_doctorName.getText();
-				String department = textField_department.getText();
-				String doorNo = textField_doorNo.getText();
-				String streetInfo = textField_streetInfo.getText();
-				String areaName = textField_areaName.getText();
-				String cityName = textField_cityName.getText();
-				String pincode = textField_pincode.getText();
-				String state = textField_state.getText();
-				String phone = textField_phoneNo.getText();
-				String mobile = textField_mobileNo.getText();
-				String email = textField_eMail.getText();
-				String remarks = textField_remarks.getText();
+		btnCancel = new JButton("Cancel");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
 
-				String sql = "update doctor set doctorName='" + doctorName + "', department='" + department
-						+ "', doorNo='" + doorNo + "', streetInfo = '" + streetInfo + "',areaName='" + areaName
-						+ "',cityName='" + cityName + "',pincode='" + pincode + "',state='" + state + "',phone='"
-						+ phone + "',mobile='" + mobile + "',email='" + email + "',remarks='" + remarks + "' where id='"
-						+ id + "'";
-				executeQuery(sql, "Updated");
-
-				textField_id.setEditable(false);
-				textField_doctorName.setEditable(false);
+				textField_labName.setEditable(false);
 				textField_department.setEditable(false);
 				textField_doorNo.setEditable(false);
 				textField_streetInfo.setEditable(false);
@@ -764,13 +640,133 @@ public class Doctor extends JFrame {
 				textField_eMail.setEditable(false);
 				textField_remarks.setEditable(false);
 
-				textField_doctorSearch.setEditable(false);
-				textField_doctorSearch.setText(null);
+				textField_LabSearch.setEditable(false);
+				textField_LabSearch.setText(null);
 				table.setVisible(false);
 				table.setEnabled(false);
 
 				textField_id.setText(null);
-				textField_doctorName.setText(null);
+				textField_labName.setText(null);
+				textField_department.setText(null);
+				textField_doorNo.setText(null);
+				textField_streetInfo.setText(null);
+				textField_areaName.setText(null);
+				textField_cityName.setText(null);
+				textField_pincode.setText(null);
+				textField_state.setText(null);
+				textField_phoneNo.setText(null);
+				textField_mobileNo.setText(null);
+				textField_eMail.setText(null);
+				textField_remarks.setText(null);
+
+				btnAdd.setEnabled(true);
+				btnEdit.setEnabled(false);
+				btnDelete.setEnabled(false);
+				btnSave.setVisible(true);
+				btnSave.setEnabled(false);
+				btnSearch.setEnabled(true);
+				btnUpdate.setVisible(false);
+				btnExit.setEnabled(true);
+			}
+		});
+		btnCancel.setIcon(new ImageIcon(OtherLab.class.getResource("/image/Actions-edit-undo-icon.png")));
+		btnCancel.setVerticalTextPosition(SwingConstants.BOTTOM);
+		btnCancel.setVerticalAlignment(SwingConstants.TOP);
+		btnCancel.setHorizontalTextPosition(SwingConstants.CENTER);
+		btnCancel.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnCancel.setFocusPainted(false);
+		btnCancel.setBackground(Color.WHITE);
+		btnCancel.setBounds(400, 0, 102, 82);
+		panel_3.add(btnCancel);
+
+		btnSearch = new JButton("Search");
+		btnSearch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				btnAdd.setEnabled(false);
+				btnEdit.setEnabled(true);
+				btnDelete.setEnabled(true);
+				btnSave.setVisible(true);
+				btnSave.setEnabled(false);
+				btnSearch.setEnabled(false);
+				btnUpdate.setVisible(false);
+				btnExit.setEnabled(true);
+
+				textField_LabSearch.setEditable(true);
+				table.setVisible(true);
+				table.setEnabled(true);
+			}
+		});
+		btnSearch.setIcon(new ImageIcon(OtherLab.class.getResource("/image/Zoom-icon.png")));
+		btnSearch.setVerticalTextPosition(SwingConstants.BOTTOM);
+		btnSearch.setVerticalAlignment(SwingConstants.TOP);
+		btnSearch.setHorizontalTextPosition(SwingConstants.CENTER);
+		btnSearch.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnSearch.setFocusPainted(false);
+		btnSearch.setBackground(Color.WHITE);
+		btnSearch.setBounds(500, 0, 102, 82);
+		panel_3.add(btnSearch);
+
+		btnExit = new JButton("Exit");
+		btnExit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				close();
+			}
+		});
+		btnExit.setIcon(new ImageIcon(OtherLab.class.getResource("/image/Actions-window-close-icon.png")));
+		btnExit.setVerticalTextPosition(SwingConstants.BOTTOM);
+		btnExit.setVerticalAlignment(SwingConstants.TOP);
+		btnExit.setHorizontalTextPosition(SwingConstants.CENTER);
+		btnExit.setFont(new Font("Tahoma", Font.BOLD, 18));
+		btnExit.setFocusPainted(false);
+		btnExit.setBackground(Color.WHITE);
+		btnExit.setBounds(600, 0, 102, 82);
+		panel_3.add(btnExit);
+
+		btnUpdate = new JButton("Update");
+		btnUpdate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				String id = textField_id.getText();
+				String labName = textField_labName.getText();
+				String department = textField_department.getText();
+				String doorNo = textField_doorNo.getText();
+				String streetInfo = textField_streetInfo.getText();
+				String areaName = textField_areaName.getText();
+				String cityName = textField_cityName.getText();
+				String pincode = textField_pincode.getText();
+				String state = textField_state.getText();
+				String phone = textField_phoneNo.getText();
+				String mobile = textField_mobileNo.getText();
+				String email = textField_eMail.getText();
+				String remarks = textField_remarks.getText();
+
+				String sql = "update lab set labName='" + labName + "', department='" + department + "', doorNo='"
+						+ doorNo + "', streetInfo = '" + streetInfo + "',areaName='" + areaName + "',cityName='"
+						+ cityName + "',pincode='" + pincode + "',state='" + state + "',phone='" + phone + "',mobile='"
+						+ mobile + "',email='" + email + "',remarks='" + remarks + "' where id='" + id + "'";
+				executeQuery(sql, "Updated");
+
+				textField_id.setEditable(false);
+				textField_labName.setEditable(false);
+				textField_department.setEditable(false);
+				textField_doorNo.setEditable(false);
+				textField_streetInfo.setEditable(false);
+				textField_areaName.setEditable(false);
+				textField_cityName.setEditable(false);
+				textField_pincode.setEditable(false);
+				textField_state.setEditable(false);
+				textField_phoneNo.setEditable(false);
+				textField_mobileNo.setEditable(false);
+				textField_eMail.setEditable(false);
+				textField_remarks.setEditable(false);
+
+				textField_LabSearch.setEditable(false);
+				textField_LabSearch.setText(null);
+				table.setVisible(false);
+				table.setEnabled(false);
+
+				textField_id.setText(null);
+				textField_labName.setText(null);
 				textField_department.setText(null);
 				textField_doorNo.setText(null);
 				textField_streetInfo.setText(null);
@@ -796,7 +792,7 @@ public class Doctor extends JFrame {
 		btnUpdate.setBounds(300, 0, 102, 82);
 		panel_3.add(btnUpdate);
 		btnUpdate.setVisible(false);
-		btnUpdate.setIcon(new ImageIcon(Doctor.class.getResource("/image/update-icon.png")));
+		btnUpdate.setIcon(new ImageIcon(OtherLab.class.getResource("/image/update-icon.png")));
 		btnUpdate.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnUpdate.setVerticalAlignment(SwingConstants.TOP);
 		btnUpdate.setHorizontalTextPosition(SwingConstants.CENTER);
@@ -804,6 +800,6 @@ public class Doctor extends JFrame {
 		btnUpdate.setFocusPainted(false);
 		btnUpdate.setBackground(Color.WHITE);
 
-		table("doctorName", "doctor");
+		table("labName", "lab");
 	}
 }

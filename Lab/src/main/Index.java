@@ -3,8 +3,6 @@ package main;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.DatabaseMetaData;
@@ -12,11 +10,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.swing.JButton;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 import database.Database;
 import database.DatabaseConnection;
@@ -24,13 +23,15 @@ import database.ExecuteQuery;
 
 public class Index {
 
-	private JFrame frame;
+	private JFrame frmIndex;
 	private JTextField textField_Username;
 	private JLabel label;
 	private JPasswordField passwordField;
 	DatabaseConnection connection = new DatabaseConnection();
 	ExecuteQuery executeQuery = new ExecuteQuery();
 	Database database = new Database();
+	private JLabel label_1;
+	private JLabel lblSynbustiq;
 
 	/**
 	 * Launch the application.
@@ -40,7 +41,7 @@ public class Index {
 			public void run() {
 				try {
 					Index window = new Index();
-					window.frame.setVisible(true);
+					window.frmIndex.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -141,73 +142,42 @@ public class Index {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 1000, 700);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
+		frmIndex = new JFrame();
+		frmIndex.getContentPane().setBackground(new Color(255, 255, 0));
+		frmIndex.setResizable(false);
+		frmIndex.setTitle("Lancent");
+		frmIndex.setBounds(100, 100, 500, 400);
+		frmIndex.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmIndex.getContentPane().setLayout(null);
 
 		textField_Username = new JTextField();
-		textField_Username.setFont(new Font("Tahoma", Font.BOLD, 15));
-		textField_Username.setBounds(684, 282, 272, 43);
-		frame.getContentPane().add(textField_Username);
+		textField_Username.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent arg0) {
+				if (arg0.getKeyCode() == KeyEvent.VK_ENTER) {
+
+				}
+			}
+		});
+		textField_Username.setFont(new Font("Tahoma", Font.BOLD, 16));
+		textField_Username.setBounds(132, 144, 352, 67);
+		frmIndex.getContentPane().add(textField_Username);
 		textField_Username.setColumns(10);
 
-		JLabel lblPassword = new JLabel("PASSWORD");
-		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblPassword.setBounds(684, 349, 272, 38);
-		frame.getContentPane().add(lblPassword);
-
-		JLabel lblUsername = new JLabel("USERNAME");
+		JLabel lblUsername = new JLabel("");
+		lblUsername.setIcon(new ImageIcon(Index.class.getResource("/image/Admin-icon.png")));
 		lblUsername.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblUsername.setBounds(684, 233, 272, 38);
-		frame.getContentPane().add(lblUsername);
+		lblUsername.setBounds(10, 144, 97, 67);
+		frmIndex.getContentPane().add(lblUsername);
 
 		label = new JLabel("");
 		label.setForeground(Color.RED);
 		label.setBackground(Color.WHITE);
 		label.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label.setBounds(684, 447, 272, 38);
-		frame.getContentPane().add(label);
-
-		JButton btnLogin = new JButton("LOGIN");
-		btnLogin.addKeyListener(new KeyAdapter() {
-			@Override
-			public void keyPressed(KeyEvent e) {
-				if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-					String username = textField_Username.getText();
-					@SuppressWarnings("deprecation")
-					String password = passwordField.getText();
-					if (username.equals("admin") && password.equals("admin")) {
-						new Admin().setVisible(true);
-					} else if (username.equals("local") && password.equals("local")) {
-						new Local().setVisible(true);
-						frame.setVisible(false);
-					} else {
-						label.setText("USERNAME OR PASSWORD IS INCORRECT");
-					}
-				}
-			}
-		});
-		btnLogin.setFont(new Font("Tahoma", Font.BOLD, 14));
-		btnLogin.addActionListener(new ActionListener() {
-
-			public void actionPerformed(ActionEvent arg0) {
-				String username = textField_Username.getText();
-				@SuppressWarnings("deprecation")
-				String password = passwordField.getText();
-				if (username.equals("admin") && password.equals("admin")) {
-					new Admin().setVisible(true);
-				} else if (username.equals("local") && password.equals("local")) {
-					new Local().setVisible(true);
-					frame.setVisible(false);
-				} else {
-					label.setText("USERNAME OR PASSWORD IS INCORRECT");
-				}
-			}
-		});
-		btnLogin.setBounds(847, 483, 109, 43);
-		frame.getContentPane().add(btnLogin);
+		frmIndex.getContentPane().add(label);
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Tahoma", Font.BOLD, 16));
 		passwordField.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
@@ -217,17 +187,28 @@ public class Index {
 					String password = passwordField.getText();
 					if (username.equals("admin") && password.equals("admin")) {
 						new Admin().setVisible(true);
-					} else if (username.equals("local") && password.equals("local")) {
+					} else if (username.equals("lab") && password.equals("lab")) {
 						new Local().setVisible(true);
-						frame.setVisible(false);
+						frmIndex.dispose();
 					} else {
 						label.setText("USERNAME OR PASSWORD IS INCORRECT");
 					}
 				}
 			}
 		});
-		passwordField.setBounds(684, 399, 272, 43);
-		frame.getContentPane().add(passwordField);
+		passwordField.setBounds(132, 271, 352, 67);
+		frmIndex.getContentPane().add(passwordField);
+
+		label_1 = new JLabel("");
+		label_1.setIcon(new ImageIcon(Index.class.getResource("/image/App-password-icon.png")));
+		label_1.setBounds(10, 271, 84, 81);
+		frmIndex.getContentPane().add(label_1);
+
+		lblSynbustiq = new JLabel("SYNBUSTIQ");
+		lblSynbustiq.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSynbustiq.setFont(new Font("Tahoma", Font.BOLD, 30));
+		lblSynbustiq.setBounds(10, 39, 474, 47);
+		frmIndex.getContentPane().add(lblSynbustiq);
 	}
 
 }

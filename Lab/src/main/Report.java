@@ -80,6 +80,7 @@ public class Report extends JFrame {
 	 * Create the frame.
 	 */
 	public Report() {
+		setTitle("Report");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setResizable(false);
 		setBounds(100, 100, 1000, 700);
@@ -355,12 +356,12 @@ public class Report extends JFrame {
 			@SuppressWarnings({ "rawtypes", "unchecked" })
 			public void actionPerformed(ActionEvent arg0) {
 				String id = textField_billNo.getText();
-				String patientName = textField_patientName.getText();
-				String age = textField_age.getText();
-				String sex = textField_sex.getText();
-				String date = textField_date.getText();
-				String doctorName = textField_refferedBy.getText();
-				String mobile = textField_mobile.getText();
+				// String patientName = textField_patientName.getText();
+				// String age = textField_age.getText();
+				// String sex = textField_sex.getText();
+				// String date = textField_date.getText();
+				// String doctorName = textField_refferedBy.getText();
+				// String mobile = textField_mobile.getText();
 				try {
 					// print table without using database
 					Connection connection = dataBase.getConnection();
@@ -368,12 +369,12 @@ public class Report extends JFrame {
 					JasperReport jr = JasperCompileManager.compileReport(reportPath);
 					HashMap report = new HashMap<>();
 					report.put("id", id);
-					report.put("patientName", patientName);
-					report.put("age", age);
-					report.put("sex", sex);
-					report.put("date", date);
-					report.put("doctorName", doctorName);
-					report.put("mobile", mobile);
+					// report.put("patientName", patientName);
+					// report.put("age", age);
+					// report.put("sex", sex);
+					// report.put("date", date);
+					// report.put("doctorName", doctorName);
+					// report.put("mobile", mobile);
 					JasperPrint jp = JasperFillManager.fillReport(jr, report, connection);
 					JasperViewer.viewReport(jp, false);
 				} catch (Exception e) {

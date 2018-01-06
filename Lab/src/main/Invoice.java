@@ -126,6 +126,7 @@ public class Invoice extends JFrame {
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public Invoice() {
+		setTitle("Invoice");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1200, 700);
@@ -658,7 +659,7 @@ public class Invoice extends JFrame {
 		JButton btnAddNewLab = new JButton("ADD NEW LAB");
 		btnAddNewLab.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Lab lab = new Lab();
+				OtherLab lab = new OtherLab();
 				lab.setVisible(true);
 			}
 		});

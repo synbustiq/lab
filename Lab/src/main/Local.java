@@ -77,9 +77,19 @@ public class Local extends JFrame {
 		mnMaster.add(mntmDoctorSetup);
 
 		JMenuItem mntmTestDepartmentSetup = new JMenuItem("Test Department Setup");
+		mntmTestDepartmentSetup.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new TestDepartment().setVisible(true);
+			}
+		});
 		mnMaster.add(mntmTestDepartmentSetup);
 
 		JMenuItem mntmTestSampleSetup = new JMenuItem("Test  Sample Setup");
+		mntmTestSampleSetup.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new TestSample().setVisible(true);
+			}
+		});
 		mnMaster.add(mntmTestSampleSetup);
 
 		JMenuItem mntmTestMaster = new JMenuItem("Test Master");
@@ -92,15 +102,35 @@ public class Local extends JFrame {
 		mnMaster.add(mntmTestMaster);
 
 		JMenuItem mntmProfileMaster = new JMenuItem("Profile Master");
+		mntmProfileMaster.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new ProfileMaster().setVisible(true);
+			}
+		});
 		mnMaster.add(mntmProfileMaster);
 
 		JMenuItem mntmPatientMaster = new JMenuItem("Patient Master");
+		mntmPatientMaster.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new PatientMaster().setVisible(true);
+			}
+		});
 		mnMaster.add(mntmPatientMaster);
 
 		JMenuItem mntmTestMethod = new JMenuItem("Test Method");
+		mntmTestMethod.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new TestMethod().setVisible(true);
+			}
+		});
 		mnMaster.add(mntmTestMethod);
 
 		JMenuItem mntmOtherLab = new JMenuItem("Other Lab");
+		mntmOtherLab.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new OtherLab().setVisible(true);
+			}
+		});
 		mnMaster.add(mntmOtherLab);
 
 		JMenu mnTransaction = new JMenu("Transaction");

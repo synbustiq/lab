@@ -18,6 +18,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 
 public class Administator extends JFrame {
 
@@ -27,6 +28,14 @@ public class Administator extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	static Administator frameAdministator = new Administator();
+	private JButton btnDoctor;
+	private JButton btnTestMethod;
+	private JButton btnTestSample;
+	private JButton btnPatientMaster;
+	private JButton btnOtherLab;
+	private JButton btnProfileMaster;
+	private JButton btnTestMaster;
+	private JButton btnTestDepartment;
 
 	/**
 	 * Launch the application.
@@ -53,6 +62,7 @@ public class Administator extends JFrame {
 	 */
 	public Administator() {
 		setTitle("Administator");
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 700, 500);
 		contentPane = new JPanel();
@@ -145,7 +155,11 @@ public class Administator extends JFrame {
 		});
 		mnMaster.add(mntmOtherLab);
 
-		JButton btnDoctor = new JButton("Doctor");
+		btnDoctor = new JButton("Doctor");
+		btnDoctor.setForeground(new Color(255, 215, 0));
+		btnDoctor.setFocusPainted(false);
+		btnDoctor.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnDoctor.setBackground(new Color(102, 205, 170));
 		btnDoctor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Doctor().setVisible(true);
@@ -156,7 +170,11 @@ public class Administator extends JFrame {
 		btnDoctor.setBounds(59, 71, 200, 48);
 		contentPane.add(btnDoctor);
 
-		JButton btnTestMethod = new JButton("Test Method");
+		btnTestMethod = new JButton("Test Method");
+		btnTestMethod.setForeground(new Color(255, 215, 0));
+		btnTestMethod.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnTestMethod.setBackground(new Color(102, 205, 170));
+		btnTestMethod.setFocusPainted(false);
 		btnTestMethod.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new TestMethod().setVisible(true);
@@ -167,19 +185,26 @@ public class Administator extends JFrame {
 		btnTestMethod.setBounds(59, 149, 200, 48);
 		contentPane.add(btnTestMethod);
 
-		JButton btnPatientMaster = new JButton("Patient Master");
+		btnPatientMaster = new JButton("Patient Master");
+		btnPatientMaster.setForeground(new Color(255, 215, 0));
+		btnPatientMaster.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnPatientMaster.setBackground(new Color(102, 205, 170));
+		btnPatientMaster.setFocusPainted(false);
 		btnPatientMaster.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new PatientMaster().setVisible(true);
 				close();
 			}
 		});
-		btnPatientMaster.setOpaque(false);
 		btnPatientMaster.setFont(new Font("Tahoma", Font.BOLD, 16));
 		btnPatientMaster.setBounds(59, 305, 200, 48);
 		contentPane.add(btnPatientMaster);
 
-		JButton btnTestDepartment = new JButton("Test Department");
+		btnTestDepartment = new JButton("Test Department");
+		btnTestDepartment.setForeground(new Color(255, 215, 0));
+		btnTestDepartment.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnTestDepartment.setBackground(new Color(102, 205, 170));
+		btnTestDepartment.setFocusPainted(false);
 		btnTestDepartment.setFont(new Font("Tahoma", Font.BOLD, 16));
 		btnTestDepartment.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -190,7 +215,11 @@ public class Administator extends JFrame {
 		btnTestDepartment.setBounds(385, 71, 200, 48);
 		contentPane.add(btnTestDepartment);
 
-		JButton btnProfileMaster = new JButton("Profile Master");
+		btnProfileMaster = new JButton("Profile Master");
+		btnProfileMaster.setForeground(new Color(255, 215, 0));
+		btnProfileMaster.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnProfileMaster.setBackground(new Color(102, 205, 170));
+		btnProfileMaster.setFocusPainted(false);
 		btnProfileMaster.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new ProfileMaster().setVisible(true);
@@ -201,7 +230,11 @@ public class Administator extends JFrame {
 		btnProfileMaster.setBounds(385, 225, 200, 48);
 		contentPane.add(btnProfileMaster);
 
-		JButton btnTestMaster = new JButton("Test Master");
+		btnTestMaster = new JButton("Test Master");
+		btnTestMaster.setForeground(new Color(255, 215, 0));
+		btnTestMaster.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnTestMaster.setBackground(new Color(102, 205, 170));
+		btnTestMaster.setFocusPainted(false);
 		btnTestMaster.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new TestMaster().setVisible(true);
@@ -212,7 +245,11 @@ public class Administator extends JFrame {
 		btnTestMaster.setBounds(385, 149, 200, 48);
 		contentPane.add(btnTestMaster);
 
-		JButton btnTestSample = new JButton("Test Sample");
+		btnTestSample = new JButton("Test Sample");
+		btnTestSample.setForeground(new Color(255, 215, 0));
+		btnTestSample.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnTestSample.setBackground(new Color(102, 205, 170));
+		btnTestSample.setFocusPainted(false);
 		btnTestSample.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new TestSample().setVisible(true);
@@ -223,7 +260,11 @@ public class Administator extends JFrame {
 		btnTestSample.setBounds(59, 225, 200, 48);
 		contentPane.add(btnTestSample);
 
-		JButton btnOtherLab = new JButton("Other Lab");
+		btnOtherLab = new JButton("Other Lab");
+		btnOtherLab.setForeground(new Color(255, 215, 0));
+		btnOtherLab.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		btnOtherLab.setBackground(new Color(102, 205, 170));
+		btnOtherLab.setFocusPainted(false);
 		btnOtherLab.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new OtherLab().setVisible(true);

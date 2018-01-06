@@ -480,7 +480,7 @@ public class OtherLab extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String id = textField_id.getText();
 				if (id == null) {
-					JOptionPane.showMessageDialog(null, "Please fill the Doctor Code");
+					JOptionPane.showMessageDialog(null, "Please fill the lab Code");
 				} else {
 					try {
 						String sql = "delete from lab where id  ='" + id + "'";

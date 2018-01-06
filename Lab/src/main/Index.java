@@ -72,6 +72,12 @@ public class Index {
 				+ "pincode varchar(255),state varchar(255),phone varchar(255),mobile varchar(255),"
 				+ "email varchar(255),remarks varchar(255))";
 
+		String patientTable = "create table patient(id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "patientName varchar(255),department varchar(255),doorNo varchar(255),"
+				+ "streetInfo varchar(255),areaName varchar(255),cityName varchar(255),"
+				+ "pincode varchar(255),state varchar(255),phone varchar(255),mobile varchar(255),"
+				+ "email varchar(255),remarks varchar(255))";
+
 		String invoiceTable = "create table invoice(id int(11)AUTO_INCREMENT PRIMARY KEY,"
 				+ "patientName varchar(255),age varchar(255),sex varchar(255),address varchar(255),"
 				+ "city varchar(255),state varchar(255),mobile varchar(255),refferedBy varchar(255),"
@@ -131,6 +137,14 @@ public class Index {
 				Statement statement = connection.getConnection().createStatement();
 				statement.executeUpdate(reportTable);
 				System.out.println("report table created");
+			}
+			ResultSet set5 = dmd.getTables(null, null, "patient", null);
+			if (set5.next()) {
+				System.out.println("patient table already created");
+			} else {
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(patientTable);
+				System.out.println("patient table created");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

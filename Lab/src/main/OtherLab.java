@@ -132,7 +132,7 @@ public class OtherLab extends JFrame {
 	}
 
 	public OtherLab() {
-		setTitle("Lab");
+		setTitle("Other Lab");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1000, 700);

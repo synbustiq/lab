@@ -35,6 +35,8 @@ public class TestDepartment extends JFrame {
 	 * Create the frame.
 	 */
 	public TestDepartment() {
+		setTitle("Test Department");
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

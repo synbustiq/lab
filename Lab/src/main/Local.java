@@ -53,7 +53,6 @@ public class Local extends JFrame {
 	 */
 	public Local() {
 		setTitle("Local");
-
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1000, 700);

@@ -125,7 +125,7 @@ public class TestMaster extends JFrame {
 	 */
 
 	public TestMaster() {
-		setTitle("Test");
+		setTitle("Test Master");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1500, 800);
 		contentPane = new JPanel();

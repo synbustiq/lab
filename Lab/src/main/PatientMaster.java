@@ -136,7 +136,7 @@ public class PatientMaster extends JFrame {
 	}
 
 	public PatientMaster() {
-		setTitle("Patient");
+		setTitle("Patient Master");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 1000, 700);

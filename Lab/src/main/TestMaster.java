@@ -120,7 +120,7 @@ public class TestMaster extends JFrame {
 		model.setRowCount(0);
 
 		// table function is called again to display refresh table
-		table("doctorName", "doctor");
+		table("testName", "test");
 	}
 
 	public void executeQuery(String query, String message) {

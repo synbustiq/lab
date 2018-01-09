@@ -30,7 +30,6 @@ import org.jdesktop.swingx.autocomplete.AutoCompleteDecorator;
 
 import database.DatabaseConnection;
 import database.ExecuteQuery;
-import other.Table;
 
 public class TestMaster extends JFrame {
 
@@ -70,7 +69,6 @@ public class TestMaster extends JFrame {
 	private JButton btnEdit;
 	DatabaseConnection dataBase = new DatabaseConnection();
 	ExecuteQuery executeQuery = new ExecuteQuery();
-	Table test_table = new Table();
 
 	/**
 	 * Launch the application.
@@ -93,7 +91,7 @@ public class TestMaster extends JFrame {
 		DefaultTableModel model = (DefaultTableModel) table.getModel();
 		model.setRowCount(0);
 		// table function is called again to diaplay refresh table
-		test_table.table("testName", "test");
+		// test_table.table("testName", "test");
 	}
 
 	public void comboBox(String name, int index) {
@@ -201,7 +199,7 @@ public class TestMaster extends JFrame {
 		table.setModel(new DefaultTableModel(new Object[][] {}, new String[] { "Test Name" }));
 		table.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		scrollPane.setViewportView(table);
-		table.setModel(test_table.table("testName", "test"));
+		// table.setModel(test_table.table("testName", "test"));
 
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new LineBorder(new Color(0, 0, 0), 2));

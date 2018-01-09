@@ -96,6 +96,14 @@ public class Index {
 				+ "billNo int(11),testNo int(11),testName varchar(255),testRate varchar(255),"
 				+ "normalValue text,testValue varchar(255))";
 
+		String testDepartment = "create table testDepartment (id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "departmentName varchar(255))";
+
+		String testMethod = "create table testMethod (id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "methodName varchar(255))";
+
+		String testSample = "create table testSample (id int(11)AUTO_INCREMENT PRIMARY KEY,"
+				+ "sampleName varchar(255))";
 		try {
 			DatabaseMetaData dmd = connection.getConnection().getMetaData();
 			ResultSet set = dmd.getTables(null, null, "doctor", null);
@@ -145,6 +153,30 @@ public class Index {
 				Statement statement = connection.getConnection().createStatement();
 				statement.executeUpdate(patientTable);
 				System.out.println("patient table created");
+			}
+			ResultSet set6 = dmd.getTables(null, null, "testDepartment", null);
+			if (set6.next()) {
+				System.out.println("testDepartment table already created");
+			} else {
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(testDepartment);
+				System.out.println("testDepartment table created");
+			}
+			ResultSet set7 = dmd.getTables(null, null, "testMethod", null);
+			if (set7.next()) {
+				System.out.println("testMethod table already created");
+			} else {
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(testMethod);
+				System.out.println("testMethod table created");
+			}
+			ResultSet set8 = dmd.getTables(null, null, "testSample", null);
+			if (set8.next()) {
+				System.out.println("testSample table already created");
+			} else {
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(testSample);
+				System.out.println("testSample table created");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -53,10 +53,8 @@ public class OtherLab extends JFrame {
 	private JTextField textField_remarks;
 	private JTextField textField_pincode;
 	private JTextField textField_state;
-
-	DatabaseConnection dataBase = new DatabaseConnection();
-	static OtherLab frameOtherlab = new OtherLab();
 	private JTextField textField_LabSearch;
+
 	private JButton btnAdd;
 	private JButton btnEdit;
 	private JButton btnDelete;
@@ -65,6 +63,9 @@ public class OtherLab extends JFrame {
 	private JButton btnSearch;
 	private JButton btnExit;
 	private JButton btnUpdate;
+
+	DatabaseConnection dataBase = new DatabaseConnection();
+	static OtherLab frameOtherlab = new OtherLab();
 
 	/**
 	 * Launch the application.

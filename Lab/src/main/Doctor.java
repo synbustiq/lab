@@ -50,9 +50,8 @@ public class Doctor extends JFrame {
 	private JTextField textField_remarks;
 	private JTextField textField_pincode;
 	private JTextField textField_state;
+	private JTextField textField_doctorSearch;
 
-	DatabaseConnection dataBase = new DatabaseConnection();
-	static Doctor frameDoctor = new Doctor();
 	private JButton btnAdd;
 	private JButton btnEdit;
 	private JButton btnDelete;
@@ -61,7 +60,9 @@ public class Doctor extends JFrame {
 	private JButton btnSearch;
 	private JButton btnExit;
 	private JButton btnUpdate;
-	private JTextField textField_doctorSearch;
+
+	DatabaseConnection dataBase = new DatabaseConnection();
+	static Doctor frameDoctor = new Doctor();
 
 	/**
 	 * Launch the application.

@@ -1,0 +1,711 @@
+TOTAL WBC COUNT,50,50,Hematology,BLOOD,Only Numbers,Tube Method,0,cells/Cumm,12,0,                ,100,80000,0, ,"Infant(atBirth):10000-24000 _x005F_x005F_x005F_x005F_x000D_
+Infant upto1yrs:6000-16000 _x005F_x005F_x005F_x005F_x000D_
+Children(2-6yrs):5000-15000 _x005F_x005F_x005F_x005F_x000D_
+Children(5-12yrs):5000-13000_x005F_x005F_x005F_x005F_x000D_
+Adult4000-11000celss/cumm",0,0
+DIFFERENTIAL COUNT ,50,50,Hematology,BLOOD,MultiProperty,,1,,0,0, ,0,0,0,,,0,0
+Quantiferan TB Gold,2500,2500,Microbiology,BLOOD,Only Texts,,,,,,,,,,,,,0
+HAEMOGLOBIN,80,80,Hematology,BLOOD,Only Numbers,,0,gms/dl,5,1,             ,0,99,0, ,"Male:13.5-17gms/dl _x005F_x005F_x005F_x005F_x000D_
+Female:12-15.3gms/dl _x005F_x005F_x005F_x005F_x000D_
+Children3month:9.5-13.5gml _x005F_x005F_x005F_x005F_x000D_
+3monthsto1yr:10.5-13.5gm/dl _x005F_x005F_x005F_x005F_x000D_
+1yrto6yr:12-14gms/dl _x005F_x005F_x005F_x005F_x000D_
+6yrto12yr:11.5-14.5gm/dl _x005F_x005F_x005F_x005F_x000D_
+Cord blood:13.5-19.5gm/dl",0,0
+RBC COUNT,70,40,Hematology,BLOOD,Only Numbers,,0,Millions/Cumm,5,0,         ,0,99,0, ,"Male :4.6-6.0millions/cumm_x005F_x005F_x005F_x005F_x000D_
+Female:4.2-5.4millions/ _x005F_x005F_x005F_x005F_x000D_
+Infant3months:3.2-4.8millio _x005F_x005F_x005F_x005F_x000D_
+3monthsto1yrs:4.0-5.2milli _x005F_x005F_x005F_x005F_x000D_
+Children:4.0-5.2million_x005F_x005F_x005F_x005F_x000D_
+Cordblood:5.0-7.0million",0,0
+PACKED CELL VOLUME (HCT),70,70,Hematology,BLOOD,Only Numbers,,0,%,4,1,       ,0,99,0,0,"Male:40-52% _x005F_x005F_x005F_x005F_x000D_
+Female:38-45% _x005F_x005F_x005F_x005F_x000D_
+Infant3months:32-44% _x005F_x005F_x005F_x005F_x000D_
+3months:36-44% _x005F_x005F_x005F_x005F_x000D_
+Children:37-41%",0,0
+MCV,20,20,Hematology,BLOOD,Only Numbers,,0,fL,5,1,    ,0,99,0, ,80 - 95fl,0,0
+MCH ,20,20,Hematology,BLOOD,Only Numbers,,0,pg,5,1,   ,0,99,0, ,27 - 32pg,0,0
+MCHC ,20,20,Hematology,BLOOD,Only Numbers,,0,%,5,1,   ,0,99,0, ,32 - 38%,0,0
+PLATELET COUNT,100,100,Hematology,BLOOD,Only Numbers,,0,lakhs/cmm,0,8, ,0,0,1,,1.5 - 4.5 lakhs,0,0
+SMEAR STUDY ,100,100,Hematology,BLOOD,Paragraph,,0,,0,0, ,0,0,1,,,0,0
+ABSOLUTE EOSINOPHIL COUNT (AEC) ,150,80,Hematology,BLOOD,Only Numbers,,0,/cumm,4,0,        ,0,999,0, ,40 - 440 /cumm,0,0
+RETICULOCYTE COUNT ,80,80,Hematology,BLOOD,Only Numbers,,0,%,3,1,   ,0,99,0, ,0.5 - 1.5 %,0,0
+MP/MF ( QBC method ),160,160,Hematology,BLOOD,Only Texts,,0, ,0,0,              ,0,0,1, ,(+)        -  0 to 1  parasites / hpf. (++)      -  1 to  10 parasites / hpf.(+++)   -  10 to 100 parasites /hpf.(++++)  -  > 100 parasites / hpf.,0,0
+BLOOD GROUP & RH TYPE ,50,50,Hematology,BLOOD,Only Texts,,0,,0,0,     ,0,0,1,,,0,0
+BLEEDING TIME ,50,50,Hematology,BLOOD,Only Texts,,0,,0,0,      ,0,0,1,,2-6mts,0,0
+CLOTTING TIME ,50,50,Hematology,BLOOD,Only Texts,,0, ,0,0,      ,0,0,1, ,3-8 mts,0,0
+PROTHROMBIN TIME (INR) ,200,200,Hematology,BLOOD,MultiProperty,,1,,0,0, ,0,0,0,,,0,0
+ACTIVATED PARTIAL THROMBOPLASTIN TIME (APTT) ,200,200,Hematology,BLOOD,MultiProperty,,1, ,0,0,     ,0,0,0, ,22 - 33 seconds,0,0
+D-DIMER ,500,500,Hematology,BLOOD,Only Numbers,,0,ng/ml,0,0,    ,0,0,1,,Negative : <200 ng/ml,0,0
+LE CELLS ,300,300,Immunology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CLOT RETRACTION TIME ,100,100,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ANTITHROMBIN III ,300,200,Hematology,BLOOD,Only Numbers,,0,mgs/dl,2,0, ,0,99,0, ,20 - 40,0,0
+FIBRINOGEN ,300,300,Hematology,BLOOD,Only Numbers,,0,mgs/dl,3,0,    ,0,999,0, ,150 - 400 mg / dl,0,0
+VITAMIN B12 ,1000,800,Biochemistry,SERUM,Only Texts,,0,ng/ml,0,0,   ,0,0,0,,,0,0
+FOLIC ACID/FOLATE LEVEL,900,900,Biochemistry,SERUM,Only Numbers,,0,ng/ml,9,5,    ,0,90,0, ,,0,0
+CRYOGLOBINS ,100,100,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PROTEIN C ,1250,1250,Biochemistry,BLOOD,Only Numbers,,0,%,3,0, ,0,999,0, ,,0,0
+PROTEIN S ,1250,1250,Biochemistry,BLOOD,Only Numbers,,0,%,3,0, ,0,999,0, ,,0,0
+LUPUS ANTICOAGULANT TEST,1200,1200,Hematology,BLOOD,Only Texts,,0,,0,0,   ,0,0,1,,,0,0
+OSMOFRAGILITY ,100,100,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HAEMOGLOBIN ELECTROPHORESIS ,600,450,Hematology,BLOOD,MultiProperty,,1, ,0,0,   ,0,0,0, ,,0,0
+CD4/CD8 COUNT ,1500,1500,Biochemistry,BLOOD,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+COOMBS TEST DIRECT ,200,200,Hematology,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+COOMBS TEST INDIRECT ,150,150,Hematology,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+RH ANTIBODY TITRE ,200,200,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+MANTOUX TEST  (10 TU /0.1 ml),100,100,Hematology,BLOOD,MultiProperty,,1, ,0,0,       ,0,0,0, ,,0,0
+MALARIAL PARASITES (smear) ,150,150,Hematology,BLOOD,Only Texts,,0, ,0,0,    ,0,0,1, ,,0,0
+CHOLESTEROL ,70,70,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,0,         ,0,999,0, ,,0,0
+A/G RATIO ,50,50,Biochemistry,URINE,Only Numbers,,0, ,4,0,  ,0,999,0, ,,0,0
+GTT,200,200,Biochemistry,SERUM,MultiProperty,,1,,0,0, ,0,0,0,,,1,0
+ACID PHOSPHATASE (PROSTATIC) ,500,150,Biochemistry,BLOOD,Only Numbers,,0,U/L,4,0,  ,0,999,0, ,180 - 914 ng/ml,0,0
+ACID PHOSPHATASE (TOTAL) ,300,150,Biochemistry,BLOOD,Only Numbers,,0,U/L,4,0,  ,0,999,0, ,3 - 17 ng/ml,0,0
+ADENOSINE DEAMINASE (ADA) ,500,500,Biochemistry,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+ALBUMIN ,70,50,Biochemistry,BLOOD,Only Numbers,BROMOCRESOL GREEN,0,gms%,4,1,   ,0,999,0, ,70 - 160,0,0
+ALKALINE PHOSPHATASE - AMP,70,60,Biochemistry,BLOOD,Only Numbers,IFCC METHOD,0,IU/L,4,0,                ,0,999,0, ,60 - 150,0,0
+ALKALINE PHOSPHATASE ISOENZYMES     ( HFT) ,450,450,Biochemistry,BLOOD,Paragraph,,0, ,0,0, ,0,0,1, ,"Normal               :   < 1.3 _x005F_x005F_x005F_x005F_x000D_
+Moderate           :    1.5 to 1.8 High                   :    1.8 to 2.4 Very high            :    > 2.4 ",0,0
+AMMONIA ,500,450,Biochemistry,BLOOD,Only Numbers,,0,Ug/dl,4,0,     ,0,999,0, ,,0,0
+AMYLASE ,300,300,Biochemistry,BLOOD,Only Numbers,,0,U/L.,4,0,      ,0,999,0, ,,0,0
+ANGIO TENSIN CONVERTING ENZYME (ACE) ,1200,1200,Hematology,BLOOD,Only Numbers,,0,U/l,4,0,  ,0,999,0, , ,0,0
+APOLIPOPROTEIN A1 ,350,350,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0, ,0,999,0, ,,0,0
+APOLIPOPROTEIN E ,350,350,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,0, ,0,150,0, ,,0,0
+APOLIPOPROTEIN B ,350,350,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,0, ,0,150,0, ,,0,0
+BICARBONATE ,50,50,Biochemistry,BLOOD,Only Numbers,,0,mEq/L,2,0,  ,0,90,0, ,,0,0
+BILIRUBIN ,120,120,Biochemistry,BLOOD,MultiProperty,,1,,0,0,  ,0,0,0,,,0,0
+BILIRUBIN (TOTAL) ,65,65,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,1,     ,0,20,0, ,< 200 mgs/dl,0,0
+BILIRUBIN (DIRECT) ,65,65,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,1,    ,0,20,0, ,1.5-2.5:1,0,0
+PROTEIN ELECTROPHOROSIS,600,600,Biochemistry,BLOOD,Only Texts,,,,,,,,,,,,,0
+BILIRUBIN (INDIRECT) ,0,0,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,1,   ,0,20,0, ,Adult : 0.2 - 1.0,0,0
+BLOOD SUGAR (F). ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0,          ,0,300,0, ,70 - 105 mgs/dl,0,0
+BLOOD SUGAR (PP 1 1/2 hrs),30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0,        ,0,400,0, ,< 140 mgs/dl,0,0
+BLOOD SUGAR (PP-2 HRS) ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0,             ,0,300,0, ,<140 mgs/dl,0,0
+BLOOD UREA NITROGEN (BUN) ,80,50,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,1,    ,0,300,0, ,10-40mgs/dl,0,0
+CALCIUM ,80,80,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,5,1,      ,0,300,0, ,8.6 - 10.3 mgs/dl,0,0
+CERULOPLASMIN ,600,400,Biochemistry,BLOOD,Only Numbers,,0,ng/dl,5,1,   ,0,90,0, ,15 - 60 ng/dl,0,0
+CHLORIDE,60,60,Biochemistry,BLOOD,Only Numbers,,0,mEq/L,3,0,   ,0,900,0, ,96 - 106 mEq/L,0,0
+COPPER ,250,250,Biochemistry,BLOOD,Only Numbers,,0,ug/dl,5,0,   ,0,999,0, ,Adult: 80 -155 microgram / dl. New Born :12- 67 microgram / dl Children: Upto10 Yrs:30 -150 microgram / dl,0,0
+CPK - MB ,300,250,Biochemistry,BLOOD,Only Numbers,,0,IU/L,3,0,    ,0,999,0, ,0 - 25 IU/L,0,0
+CPK - TOTAL ,300,250,Biochemistry,BLOOD,Only Numbers,,0,IU/L,5,0,     ,0,999,0, ,Men: 25 - 200 IU/L Women : 25 - 170 IU/L,0,0
+FERRITIN ,500,450,Biochemistry,BLOOD,Only Numbers,,0,ng/ml,5,0,        ,0,999,0, ,Male       : 23.9 - 336.2 ng/ml Female   : 10 - 120 ng/ml,0,0
+G6 PDH ,400,400,Biochemistry,BLOOD,Only Numbers,,0,"U-10^12rbc,s",5,1,     ,0,99,0, ,202 to 522,0,0
+GALL STONE ANALYSIS ,200,200,Biochemistry,BLOOD,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+GAMMA GT ,200,150,Biochemistry,BLOOD,Only Numbers,,0,U/L.,5,2,     ,0,999,0, ,Male      : < 55 U/L Female  : < 38  U/L,0,0
+GLOBULINS ,60,60,Biochemistry,BLOOD,Only Numbers,,0,gms/dl,4,1, ,0,20,0, ,2.3 - 3.5,0,0
+G.T.T. ( GLUCOSE TOLERANCE TEST) ,200,200,Biochemistry,BLOOD,MultiProperty,,1, ,0,0,   ,0,0,1, ,,1,0
+GLYCOSYLATED HAEMOGLOBIN (HB A1c) ,300,300,Biochemistry,BLOOD,Only Numbers,,0,%,4,1,     ,0,20,0, ,Below 5.6 NORMAL 5.7 - 7.0 GOOD CONTROL 7.1-8.0 FAIR CONTROL ABOVE 8.0- POOR CONTROL (GHB is an index of yourblood sugar control for thepast 3 months),0,0
+HBA1C ,300,300,Biochemistry,BLOOD,Only Numbers,,0, %,0,0,              ,0,0,0, ,< 6.0  : Non diabetic 6 - 8   : Good control 8.1 - 10.0 :Unsatisfactory above 10.0 : Poor control,0,0
+HBDH ,250,250,Biochemistry,BLOOD,Only Numbers,,0,Units/ml,3,0, ,0,900,0, ,120 - 260,0,0
+HDL CHOLESTEROL (DIRECT METHOD) ,80,80,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,2,0,   ,0,60,0, ,Men:Less than35 High risk 35-55 Desriable Female: Less than45 High risk 45-65 Desrible,0,0
+HOMOCYSTEINE ,500,500,Biochemistry,BLOOD,Only Numbers,,0,µmol/L,4,0,     ,0,600,0, ,Folate Supplemented Diet:< 15 years      : < 8 µmol/L 15 - 65 Years  : < 12 µmol/L >65 Years       : < 16 µmol/L No Folate Supplemenatation: <15 Years      : < 10 µmol/L 15 - 65 Years : < 15 µmol/L >65 Years      : < 20 µmol/L,0,0
+HOMOGENTISIC ACID (URINE) ,150,150,Biochemistry,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ICTERIC INDEX ,60,60,Biochemistry,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,Upto 6.0 Units,0,0
+IMMUNOELECTROPHORESIS ,4800,4800,Biochemistry,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+IONISED CALCIUM ,150,150,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,1,  ,0,20,0, ,4.7 -5.5mgs/dl,0,0
+IRON ,250,250,Biochemistry,BLOOD,Only Numbers,,0,Ug/dl,6,3,         ,0,900,0, ,33 - 190  Ug / dl.,0,0
+LACTIC ACID (LACTATE) ,250,250,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,1, ,0,30,0, ,6.0 - 18.0,0,0
+LDH ,250,250,Biochemistry,BLOOD,Only Numbers,,0,U/l,4,0,     ,0,600,0, ,207 - 414 U/l,0,0
+LDL CHOLESTEROL (DIRECT METHOD) ,80,80,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0,  ,0,900,0, ,Desirable:Less than100 Normal risk:10-139 High risk:More than 140,0,0
+LEAD ,150,150,Biochemistry,BLOOD,Only Numbers,,0,ug/ml,4,1, ,0,20,0, ,0.10 - 0.30,0,0
+LIPASE ,300,300,Biochemistry,BLOOD,Only Numbers,,0,U/L,4,1,     ,0,600,0, ,Up to 190 U/L,0,0
+LIPOPROTEIN (a) ,600,600,Biochemistry,BLOOD,Only Numbers,,,mgs/dl,4,4,,,,,,up to 30 mgs/dl,,0
+LIPOPROTEIN (L Pa) ,600,600,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,0, ,0,400,0, ,0-30 Favourable 30-100 Normal Risk,0,0
+LITHIUM ,250,250,Biochemistry,BLOOD,Only Numbers,,0,mEq/L,5,1,  ,0,20,0, ,0.5 - 1.5mEq/L (Therapaeutic value) ,0,0
+MAGNESIUM ,200,200,Biochemistry,BLOOD,Only Numbers,,0,mg/dl,5,2,    ,0,20,0, ,Adult : 1.8 - 2.5 mg/dl Child : 1.5 - 2.3 mg/dl,0,0
+OXALATE ,200,200,Biochemistry,BLOOD,Only Numbers,,0,u.mole/L,5,2, ,0,30,0, ,0 - 5.4,0,0
+Adult : 1.3 - 2.5 ,60,60,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,5,2, ,0,30,0, ,Adults      : 2.5 -5.0 mg/dl Chldren    : 4.0 - 6.5 mg/dl,0,0
+POTASSIUM ,100,100,Biochemistry,BLOOD,Only Numbers,,0,mEq/L,5,2,   ,0,30,0, ,3.5 - 5.0 mEq/L,0,0
+PYRUVATE ,500,500,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,5,2, ,0,30,0, ,0.5 - 1.0,0,0
+RENAL STONE ANALYSIS ,150,150,Biochemistry,STONE,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+SERUM FRUCTOSAMINE ,200,200,Biochemistry,BLOOD,Only Numbers,,0,m.mole,5,2, ,0,20,0, ,Normal : 1.6 - 2.5 Good contol : 2.6 - 3.2,0,0
+SERUM PROTEIN ELECTROPHORESIS ,500,250,Biochemistry,BLOOD,MultiProperty,,1,,0,0,  ,0,0,0,,,0,0
+SGOT ,70,60,Biochemistry,BLOOD,Only Numbers,IFCC METHOD,0,U/L,5,2,     ,0,20,0, ,5.0 - 40.0 U/L,0,0
+SGPT ,70,60,Biochemistry,BLOOD,Only Numbers,IFCC METHOD,0,U/L,5,2,    ,0,100,0, ,5.0 - 40.0 U/L,0,0
+SODIUM ,60,60,Biochemistry,BLOOD,Only Numbers,,0,mEq/L,3,0,    ,0,300,0, ,135 - 145 mEq/L,0,0
+STONE ANALYSIS ,300,150,Biochemistry,STONE,Only Texts,,0,,0,0,   ,0,0,0,,,0,0
+SUGAR - PLURAL FIUID  ,25,25,Biochemistry,FLUID,Only Numbers,,0,mg/dl,3,0, ,0,300,0, ,,0,0
+SUGAR (1 Hour) ,25,25,Biochemistry,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SUGAR (PP) ,25,25,Biochemistry,BLOOD,Only Numbers,,0,mg/dl,3,0, ,0,300,0, ,Up to 140 mg/dl,0,0
+SUGAR- ACITIC FLUID ,25,25,Biochemistry,BLOOD,Only Numbers,,0,mg/dl,3,0, ,0,300,0, ,,0,0
+THYMOL TURBIDITY ,40,40,Biochemistry,BLOOD,Only Numbers,,0,Units,5,2, ,0,30,0, ,Upto 8.0 Units,0,0
+TIBC ,400,150,Biochemistry,BLOOD,Only Numbers,,0,mg/dl,5,5,       ,0,900,0, ,250 - 450 mg/dl,0,0
+TOTAL CHOL/HDL CHOL. RATIO ,100,100,Biochemistry,BLOOD,Only Numbers,,0, ,5,2, ,0,300,0, ,2.5 - 4.5,0,0
+EBV VCA/EA lgG  (VCAG),500,400,Microbiology,SERUM,Only Numbers,,,,,,,,,,,<0.10 Negatvie > 0.10 to 0.21>0.21 Postive,,0
+EBV EBMA lgG (EBMA),500,400,Microbiology,SERUM,Only Numbers,,,,,,,,,,,<0.10 Negatvie > 0.10 to 0.21>0.21 Postive,,0
+TRIGLYCERIDES ,70,60,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,12,0,         ,0,400,0, ,< 200 mgs/dl,0,0
+TROPONIN - I ,800,650,Biochemistry,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+TROPONIN - T ,800,650,Biochemistry,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+S.Creatinine,80,80,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,4,0,          ,0,400,0, ,Men:0.7-1.2 mgs/dl Women:0.6-0.9 mgs/dl,0,0
+URIC ACID ,80,80,Biochemistry,URINE,Only Numbers,,0,mg/dl,5,2,        ,0,100,0, ,Men       : 3.5 - 7.2 mg/dl Women  : 2.6 - 6.0 mg/dl,0,0
+URINE SUGAR ( 1hr AFTER 75 gms OF GLUCOSE) ,10,10,Biochemistry,URINE,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+URINE SUGAR (F) ,10,10,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0,       ,0,0,1, ,,0,0
+URINE SUGAR (PP) ,10,20,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0,      ,0,0,1, ,,0,0
+URINE SUGAR (R) ,10,10,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0,     ,0,0,1, ,,0,0
+VAN DEN BERGH ,50,50,Biochemistry,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+VITAL ,20,20,Biochemistry,URINE,MultiProperty,,1, ,0,0, ,0,0,0, , ,0,0
+VLDL CHOLESTEROL ,50,50,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0,  ,0,300,0, ,0 - 25,0,0
+ZINC ,250,250,Biochemistry,BLOOD,Only Numbers,,0,ug/dl,4,0,   ,0,100,0, ,60 - 120 ug/dl,0,0
+Ab TO LKM -1 ,760,760,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO JO -1 ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO PARIETAL CELL ,750,750,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO RNP - SM ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO SCL - 70 ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO SM ANTIGEN ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO SSA ( LA) ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TO SSA (RA) ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Ab TON u1-SN-RNP 68 KDA ,600,600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ANTI HBe ,500,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,   ,0,0,1, ,,0,0
+ANTI HBc IGM,500,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,          ,0,0,1, ,,0,0
+ANTI HBc TOTAL,500,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,    ,0,0,1, ,,0,0
+ANTI HBs(QUANTITIVE) ,600,400,SEROLOGY,BLOOD,Only Texts,,0,,0,0,      ,0,0,0,,Protective  > 10  IU / L,0,0
+ANTI HAV IgM (Elisa),500,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+ANTI HAV IgG (Elisa),500,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+ANTI HEV IgM (Elisa),500,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,    ,0,0,1, ,Cut off : 0.050,0,0
+ANTI HEV IgG (Elisa),550,550,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ANTI DELTA IgM ,700,700,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+ANTI HCV (Elisa),500,450,SEROLOGY,BLOOD,Only Texts,,0,,0,0,       ,0,0,1,,(Cut off - 0.090),0,0
+ANTI SPERM Ab ,450,450,SEROLOGY,SERUM,Only Numbers,,0,U/ml,5,2, ,0,300,0, ,<20  :NEGATIVE >20  :POSITIVE ,0,0
+ANTI SMOOTH MUSCLE ANTI BODY ,750,751,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ANTI TB IGA,350,350,SEROLOGY,SERUM,Only Numbers,,0,U/ml.,5,0,        ,0,900,0,,Negative        : < 0.90 Equivocal       : 0.90 to 1.10 Positive         :  >1.10,0,0
+ANTI TB IGG ,350,350,SEROLOGY,SERUM,Only Numbers,,0,U/ml,5,0,     ,0,900,0, ,Negative        : < 0.90 Equivocal       : 0.90 to 1.10 Positive         :  >1.10,0,0
+ANTI TB IGM ,350,350,SEROLOGY,SERUM,Only Numbers,,0,U/ml,0,0,       ,0,0,0,,Negative        : < 0.90 Equivocal       : 0.90 to 1.10 Positive         :  >1.10,0,0
+ASO TITRE TURBILATEX METHOD ,300,250,SEROLOGY,BLOOD,Only Numbers,,0,IU/ml,5,0,        ,0,900,0, ,< 200 IU/ml,0,0
+BLOOD  STD ,60,60,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+BLOOD  WIDAL ,80,50,SEROLOGY,BLOOD,MultiProperty,,1, ,0,0,    ,0,0,0, ,,0,0
+BRUCELLA AB ,450,450,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+C- REACTIVE PROTEIN(Turbilatex) ,200,175,SEROLOGY,BLOOD,Only Numbers,,0,mgs/L,6,2,  ,0,30,0, ,less than 0.6 mgs/L,0,0
+CHLAMYDIA  IgM Ab ,350,350,SEROLOGY,BLOOD,Only Numbers,,0,NU,6,2, ,0,300,0, ,< 9.0      : Negative  9.0 - 10   : Equivocal,0,0
+CHLAMYDIA  IgG Ab ,350,350,SEROLOGY,BLOOD,Only Numbers,,0,NU,6,2, ,0,100,0, ,< 9.0      : Negative 9.0 - 11   : Equivocal,0,0
+CRP ,250,250,SEROLOGY,SERUM,Only Texts,,0,mg/L.,0,0,              ,0,0,1, ,Upto 5 mg/L.,0,0
+DENGUE Ab Igm ,500,500,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,    ,0,0,1, ,< 9 : Negative   10 - 12- Equivocal  >12- Positive ,0,0
+DENGUE Ab IgG ,500,500,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,   ,0,0,1, ,< 9 : Negative    10 - 12: Equivocal > 12 - Positive,0,0
+EPSTEEIN BARR VIRUS (EPV) ,1000,1000,SEROLOGY,SERUM,Only Numbers,,0,6,2,0, ,0,300,0, ,,0,0
+FLUORESCENT TREPONEMAL Ab Absorption TEST ,500,500,SEROLOGY,SERUM,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+FTA Abs ,400,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HBe Ag ,400,400,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+HBSAg,200,200,SEROLOGY,BLOOD,Only Texts,,0,,0,0,           ,0,0,1,,Cut off : 0.055,0,0
+HBV DNA ( QUALITATIVE ) ,5000,5000,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HBV DNA ( QUANTITATIVE) ,5000,5000,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HCV GENO TYPING ,5000,5000,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Anti HCV ,250,250,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HCV RNA QUANTITATIVE ,6000,6000,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HIV 1 & 2,300,300,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,                ,0,0,1, ,,0,0
+HIV I & II (WESTERN BOLT METHOD),300,1600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+HIV I RNA (QUANTITATIVE) ,4000,4000,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HLA B27 ,1200,1200,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+LEPTOSPIROSIS DFM ,200,100,SEROLOGY,BLOOD,Only Texts,,0,,0,0,  ,0,0,0,,,0,0
+LEPTOSPIROSIS  IgM (ELISA),500,400,SEROLOGY,BLOOD,Only Texts,,0,IU/ml.,0,0,         ,0,0,1, ,< 9 : Negative 10 - 12 : Equivocal >12 : Positive,0,0
+LEPTOSPIROSIS (MAT) ,350,350,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+LEPTOSPIROSIS IgG ,350,350,SEROLOGY,BLOOD,Only Numbers,,0,IU/ml.,6,2,      ,0,300,0, ,< 9 : Negative 10 - 12 : Equivocal >12 : Positive,0,0
+MEASLES Ab IgG ,500,500,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,< 0.9 I.S.R.     : Negative 0.9 - 1.0 I.S.R. : Equivocal,0,0
+MEASLES Ab IgM ,500,500,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,< 0.9 I.S.R        : Negatve 0.91 - 1.0 I.S.R : Equivocal >1.0 I.S.R         : Positive,0,0
+MUMPS IgG AB ,650,650,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+MUMPS IgM AB ,750,750,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PAUL BUNNEL TEST ,250,250,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+RA FACTOR (TURBUILATEX METHOD ) ,250,250,SEROLOGY,SERUM,Only Texts,,0,IU/ml,5,5,         ,0,1000,1, ,Negative : Upto 30 IU/ml,0,0
+RHEUMATOID FACTOR (RF) ,200,200,SEROLOGY,BLOOD,Only Numbers,,0,IU/ml,6,2,    ,0,300,0, ,< TO 20 IU/ml,0,0
+ROSE WALLER TEST ,125,125,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+STS ,50,50,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+TPHA ,80,80,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+VDRL ,80,70,SEROLOGY,BLOOD,Only Texts,,0,,0,0,    ,0,0,1,,,0,0
+WESTERN BLOT FOR HIV I & II ,1600,1600,SEROLOGY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+WIDAL  TEST,100,100,SEROLOGY,BLOOD,MultiProperty,Slide Method,1, ,0,0,         ,0,0,1, ,,0,0
+17 - OH PROGESTERONE  ,450,450,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2, ,0,300,0, ,Male   : 0.4 - 3.6,0,0
+ACTH ,900,900,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pg/ml,5,2,  ,0,900,0, ,7.2 - 63.2,0,0
+ANDROSTENEDIONE (A4),850,850,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2, ,0,100,0, ,0.5 -3.7,0,0
+Milk-SPECIFIC IGE,550,400,DRUG ASSAY,SERUM,Only Numbers,,,IU/ml,0,0,,,,,,Less than 0.35 IU/ml : Negative>0.36 .0.70 IU/ml Low Positive>0.71 . 3.50 IU/ml b: Modereate><POSITIVE: 17.50 IU/ml : High Positive> More than 17.50 IU/ml: Very High Positive.,,0
+ANTI CARDIOLIPIN AB IGG ,500,500,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,GPL U/ml,6,4,   ,0,1000,0, ,<11 Negative12 - 20 Intermediate21 - 80 Low medium Positive>80 Strong Positive,0,0
+ANTI CARDIOLIPIN AB IGM ,500,500,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,MPL U/ml,7,4,   ,0,1000,0, ,<10 Negative11 - 20 Intermediate21 - 80 Low medium Positive>80 Strong Positive,0,0
+Beta HCG ,400,400,ENDOCRINOLOGY,BLOOD,Only Texts,,0,mIU/ml,0,0,                 ,0,0,0,,"Non Preganant   : 0 - 10 mIU / ml 16 - 23     :LMP(10-40) 24 - 30     :LMP(50-100) 31 - 38     :LMP(100-1000) 1st Trimester    :10,000 - 1,60,000 2nd Trimester   :6,000 - 30,000 3rd Trimester   :400 - 15,000",0,0
+C - PEPTIDE(F) ,200,200,ENDOCRINOLOGY,BLOOD,Only Numbers,,0, ng/ml,5,2,  ,0,300,0, ,1.0 - 4.4 ng/ml,0,0
+C-PEPTIDE  (F),450,450,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2,         ,0,300,0, ,1.0 - 4.4 ng/ml,0,0
+C-PEPTIDE (PP) ,450,450,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2,            ,0,300,0,,5.0 - 12.0 ng/ml,0,0
+CORTISOL (AM) ,450,450,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ug/dl,5,2,    ,0,300,0, ,3.7 - 19.4 ug/dl,0,0
+CORTISOL (PM) ,450,450,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ug/dl,5,2, ,0,300,0, ,3.1 - 16.7 (8pm - 9pm),0,0
+DIHYDROTESTOSTERONE ,1500,1500,ENDOCRINOLOGY,BLOOD,Only Numbers,,0, ,5,2, ,0,300,0, ,,0,0
+ESTRADIOL(E2) ,250,250,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pg/ml,5,2,         ,0,100,0, ,Adult Male : 7.63 - 42.6 pg/ml.Adult (Females):  Follicular Phase: 12.5 - 166Ovulatory phase  :  85.8 - 498Luteal Phase: 43.8 - 211 Postmenopausal: 0 - 54.7Pregnant1 st Trimester  : 215 - 4300 pg/mlChildrensBoys : 0 - 20 pg/mlGirls  : 6 - 27 pg/m,0,0
+ESTRADIOL/OESTROGEN(E2),450,350,ENDOCRINOLOGY,BLOOD,Only Numbers,,,pg/ml,5,2,,,,,,Adult Male : 0.39.8 pg/ml> Adult (Females) Follicular Phase :19.5-144.2><Mid cycle:63.9 - 356.7><Luteal Phase: 55.8 - 212.2><Postmenopausal: 0 - 32.2>,,0
+ESTRIOL(E3) ,350,350,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2, ,0,300,0, ,2nd Trimester : 0.20 - 4.43 3rd Trimester : 1.47 - 13.92,0,0
+Free Beta HCG ,10,10,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,mIU/ml,5,2, ,0,300,0, ,,0,0
+FREE T3 ,200,200,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pg/ml,5,2,      ,0,30,0, ,1.4 - 4.2 pg/ml.,0,0
+FREE T4 ,200,200,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/dl,5,2,     ,0,10,0, ,0.8 - 2.0 ng /dl.,0,0
+FREE TESTOSTERONE ,400,400,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pmol/l,5,2,    ,0,100,0, ,Male      : 31 - 94 pmol/lFemale  : 3  - 13 pmol/l,0,0
+FREE CORTISOL ,250,250,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2, ,0,100,0, ,4.3 - 22.4 (8am - 9am)3.1 - 16.7 (8pm - 9pm),0,0
+FSH ,300,300,ENDOCRINOLOGY,SERUM,Only Texts,,0,mIU/ml,0,0,    ,0,0,0,,"Female:, Follicular Phase   :1.4 - 9.9,Midcycle Peak     :0.2 - 17.2,Luteal Phase       :1.1 - 9.2,Post Menopausal :19.3 -100.6Male    :1.5 - 18.0",0,0
+GASTRIN ,600,600,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pg/ml,5,2, ,0,200,0, ,0 - 108,0,0
+GROWTH HORMONE (GH) ,400,400,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2, ,0,100,0, ,0.0 - 7.0,0,0
+HCG (Total) ,300,300,IMMUNO ASSAY,BLOOD,Only Texts,,0,mIU/ml.,0,0,   ,0,0,0,,Less than 10 ,0,0
+IgF1 ,200,200,ENDOCRINOLOGY,BLOOD,Only Numbers,,0, ,5,2, ,0,300,0, ,,0,0
+IgF BP3 ,1000,1000,ENDOCRINOLOGY,BLOOD,Only Numbers,,0, ,5,2, ,0,300,0, ,Enclosed,0,0
+INSULIN (POST PRANDIAL) ,400,400,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,uU/ml,5,2,       ,0,300,0, ,25 - 84 uU/ml.,0,0
+INSULIN (FASTING) ,600,600,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,uU/ml,6,3,      ,1,1000,0, ,2.6 - 24.9 uU / ml,0,0
+LUTENIZING HORMONE (LH) ,300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,mIU/ml,5,2,         ,0,100,0, ,MALE :0.7-7.4 mIU / ml.FEMALE :Follicular phase:0.5 - 10.5mIU/ml Luteal phase:0.5 - 10.5mIU/ml Mid cycle peak:18.4 - 61.2mIU/ml Post menopasual:8.2 - 40.8mIU/ml,0,0
+MICROSOMAL Ab,250,250,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,IU/ml,5,2,        ,0,300,0, ,Negative  : <34 IU / ml Positive    : >34 IU / ml,0,0
+PARA THYROID HORMONE (PTH) ,10,10,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pg/ml,5,2,   ,0,300,0, ,15 - 65,0,0
+PROGESTERONE .,300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2,         ,0,100,0, ,Male: 0.3 -1.5 ng/ml Female: Follicular Phase: 0.15 -1.40 ng/ml Luteal Phase: 3.34 -25.56 ng/ml Mid Luteal Phase: 4.44 -28.03 ng/ml Postmenopausal: ND -0.73 ng/ml Pregnant Femals: 1st Trimester : 11.0 -90.0 ng/ml 2nd Trimester : 25.0 -89.0 ng/ml ,0,0
+PROLACTIN ,300,150,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,2,            ,0,100,0, ,FEMALE :3.0 - 29.0 ng/mlMALE     :2.0 - 18.0 ng/ml,0,0
+PROTEIN BOUND IODINE (PBI) ,100,100,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ug/dl,5,0, ,0,100,0, ,01-Aug,0,0
+PTH (INTACT) ,850,850,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,pg/ml,5,0,    ,0,200,0, ,10 - 65 pg/ml,0,0
+SHBG (SEX HORMONE BINDING GLOBULIN) ,300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,nmol/L,5,0, ,0,100,0, ,18 - 114,0,0
+T,400,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,,,,,,,,,,Adult> Male : 260 - 1000 ng/dl. Female : 15 - 70 ng/dl,,0
+TESTOSTERONE. ,300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/dL,5,2,          ,0,200,0, ,Adult:Female  : 15 - 70 ng/dL Male      : 260 - 1000 ng/dL.,0,0
+THYROGLOBULIN AB,500,500,ENDOCRINOLOGY,SERUM,Only Numbers,,0,IU/ml,6,0,          ,0,300,0, ,Negative  : < 225 IU/ml Equivocal : 225 - 325 IU/ml Positive    :  >325 IU/ml,0,0
+THYROID MICROSOMAL AB  ,500,500,ENDOCRINOLOGY,SERUM,Only Numbers,,0, ,7,2,     ,0,300,0, ,Negative  : <34 IU / ml Positive    : >34 IU / ml,0,0
+TOTAL TRIIODOTHYRONINE (  T3  ),150,150,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,5,0,      ,0,300,0, ,0.52-1.85 ng/ml,0,0
+TOTAL THYROXINE (  T4  ),150,150,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ug/dl,5,2,     ,0,100,0, ,4.4 - 10.8 ug/dl.,0,0
+  TSH  ,100,100,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,IU/ml,6,2,     ,0,10,0, ,0.3 0- 6.16 uIU/ml,0,0
+P - ANCA ,1000,1000,IMMUNO ASSAY,BLOOD,Only Texts,,,IU/ml,,,,,,,,Negative < 5.0 IU/ml:Positive > 5.0 IU/ml,,0
+ANCA (MPO &  PR3) ,1000,1000,,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ANTI CARDIOLIPIN AB IGA ,500,500,IMMUNO ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+ANTI NUCLEAR AB(ANA BY IF METHOD),900,900,IMMUNO ASSAY,BLOOD,Only Texts,,0,,5,3,        ,0,500,0,,METHOD : Indirect Immunoflouresence using HEp2 cells and primate Liver Sections.,0,0
+C - ANCA ,500,500,IMMUNO ASSAY,SERUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+C.E.A ,500,500,IMMUNO ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CARDIOLIPIN IgA ,10,10,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,5,2, ,0,30,0, ,,0,0
+Anti CARDIOLIPIN IgG ,500,500,IMMUNO ASSAY,BLOOD,Only Numbers,,0,gpl/ml,5,2, ,0,100,0, ,< 10 : Negative > 10 : Positive,0,0
+Anti CARDIOLIPIN IgM ,500,500,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mpl/ml,5,2,  ,0,100,0, ,<7.0 : Negative >7.0 : Positive,0,0
+COMPLEMENT3(C3) ,250,250,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,5,2, ,0,100,0, ,80 - 170,0,0
+COMPLEMENT4(C4) ,200,200,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,5,0, ,0,200,0, ,14 - 45,0,0
+ds DNA ,600,600,IMMUNO ASSAY,BLOOD,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+H.PYLORI  Ab,600,600,Microbiology,BLOOD,Only Texts,,0,,0,0,      ,0,0,0,,,0,0
+IgA (by Nephelometry) ,200,200,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,3,0, ,0,900,0, ,70 - 400,0,0
+ImmunoglobulinG(IgG) ,350,350,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,5,0, ,0,9999,0, ,700 - 1600,0,0
+ImmunoglobulinA(IgA) ,350,350,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,5,0, ,0,9999,0, ,,0,0
+ImmunoglobulinM(IgM) ,350,350,IMMUNO ASSAY,BLOOD,Only Numbers,,0,mgs/dl,6,0, ,0,999,0, ,40 - 240,0,0
+ImmunoglobulinE(IgE) ,400,400,IMMUNO ASSAY,BLOOD,Only Texts,,0,IU/ml.,15,5,  ,0,1000,0,,Adult Negative    <160 IU/ml.<1 Year      - 1.5 - 52.0 1 - 4 Years - 0.4 - 35.0 4 - 10 Year - 0.5 - 393 11 - 15 Years - 1.90 - 170 IU/ml.,0,0
+P - ANCA ,500,500,IMMUNO ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PHOSPHOLIPID Ab IgG ,500,500,IMMUNO ASSAY,BLOOD,Only Numbers,,0,GPL/ml,5,2, ,0,200,0, ,< 10 : Negative > 10 : Positive,0,0
+PHOSPHOLIPID Ab IgM ,500,500,IMMUNO ASSAY,BLOOD,Only Numbers,,0,GPL/ml,5,2,  ,0,500,0, ,< 10     : Negative> 10     : Positive,0,0
+TORCH PANEL IgG & IgM ,1500,1500,IMMUNO ASSAY,SERUM,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+TORCH PANEL,1500,700,SEROLOGY,SERUM,MultiProperty,,1,,0,0,  ,0,0,0,,,0,0
+ALPHA FETO PROTEIN (AFP) ,550,450,TUMOUR MARKERS,BLOOD,Only Texts,,0,ng/ml,0,0,     ,0,0,0,,Adults         : 0 - 5 ng/mlPregnancy  :16 Weeks  : 16 - 70 ng/ml18 Weeks  : 25 - 105 ng/ml20 Weeks  : 35 - 150 ng/mlHepatic Malignancy : >120 ng/ml,0,0
+B2 Microglobulin ,10,10,TUMOUR MARKERS,BLOOD,Only Numbers,,0,ml,5,2, ,0,100,0, ,,0,0
+CA - 125 ,600,600,TUMOUR MARKERS,BLOOD,Only Numbers,,0,U/ml,5,0,    ,0,1000,0, ,Negative  : <35 U/ml,0,0
+CA - 15 -3 ,600,600,TUMOUR MARKERS,BLOOD,Only Numbers,,0,U/ml,6,0, ,0,1000,0, ,Sep-51,0,0
+CA - 19 - 9 ,600,600,TUMOUR MARKERS,BLOOD,Only Numbers,,0,U/ml,6,0,   ,0,1000,0, ,Negative : 0 - 30.9 U/ml,0,0
+CALCITONIN ,1000,1000,TUMOUR MARKERS,BLOOD,Only Texts,,0,pg/ml.,0,0,    ,0,0,0,,Men      : <8.8 pg/mlWomen : <5.8 pg/ml,0,0
+CARCINO EMBRYONIC  ANTIGEN (CEA) ,450,450,TUMOUR MARKERS,BLOOD,Only Numbers,,0,ng/ml,6,0,  ,0,1000,0, ,Non Smoker : Upto 5.0 ng/mlSmoker         : Upto 8.0 ng/ml,0,0
+FREE PSA ,400,400,TUMOUR MARKERS,BLOOD,Only Texts,,0, ,0,0,  ,0,0,1, ,0 - 4.5 ng/ml,0,0
+PROSTATE SPECIFIC ANTIGEN (PSA) ,450,450,TUMOUR MARKERS,BLOOD,Paragraph,,0,,0,0, ,0,0,0,,< 60 Years    :< 4.0 ng / ml62-65 Years  :0 - 4.5 ng / ml>70 Years     :0 - 6.5 ng / ml,0,0
+CMV IgM Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0,NU,5,2, ,0,300,0, ,< 9.0       : Negative9.0  - 11.0 : Equivocal> 11.0      : Positive,0,0
+CMV IgG Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0, ,5,2, ,0,100,0, ,< 0.9     : Negative 0.9 - 1.0 : Equivocal,0,0
+HSV I IgM Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0, ,5,2,  ,0,100,0, ,Negative  : <0.9Equivocal : 0.9 - 1.0Positive    : >1.0,0,0
+HSV I IgG Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0, ,5,2,  ,0,100,0, ,Negative  : <0.9 Equivocal : 0.9 - 1.0 Positive    : >1.0,0,0
+HSV II IgM Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0, ,5,2,  ,0,100,0, ,Negative  : <0.9 Equivocal : 0.9 - 1.0 Positive    : >1.0,0,0
+HSV II IgG Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0, ,5,2,  ,0,100,0, ,Negative  : <0.9Equivocal : 0.9 - 1.0Positive    : >1.0,0,0
+RUBELLA IgG Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0,IU/ml,5,2,  ,0,100,0, ,Positive : >=10 IU/ml,0,0
+RUBELLA IgM Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0,EIU/ml,5,2,       ,0,100,0, ,Positive   :>=10 EIU/ml,0,0
+TOXOPLASMA IgM Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0,AU/ml,5,2, ,0,100,0, ,< 9.0       : Negative 9.0 - 10.0  : Equivocal,0,0
+TOXOPLASMA IgG Ab ,200,200,TORCH PANEL,BLOOD,Only Numbers,,0,IU/ml,5,2, ,0,100,0, ,< 9.0  : Negative9 - 10 : Equivocal,0,0
+ALLERGY WITH VACCINE ,1150,1150,DRUG ASSAY,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+AMPHETAMINE ,500,500,DRUG ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CANNABINOIDS ,500,500,DRUG ASSAY,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CARBAMAZEPINE ,500,500,DRUG ASSAY,URINE,Only Numbers,,0,micro gm/ml,5,2, ,0,200,0, , 4 - 12(Therapeutic Level),0,0
+COCAINE ,500,500,DRUG ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CYCLOSPORINE ( WHOLE BLOOD) ,850,850,DRUG ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CYCLOSPORINE (C2) ,850,850,DRUG ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+DIGOXIN ,300,300,DRUG ASSAY,BLOOD,Only Numbers,,0,ng/ml,5,2, ,0,300,0, ,Therapeutic level0.8 - 2.4,0,0
+INH LEVEL ,500,500,DRUG ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+MORPHINE ,175,175,DRUG ASSAY,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+OPIATES ,500,500,DRUG ASSAY,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PHENCLIDINE ,500,500,DRUG ASSAY,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+THEOPHYLLINE ,400,400,DRUG ASSAY,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+VALPROIC ACID ,500,500,DRUG ASSAY,BLOOD,Only Numbers,,0,micro gm/ml,6,2, ,0,100,0, ,50 - 100(Therapeutic level),0,0
+PCR FOR MTB - BLOOD ,1000,1000,FLOW CYTOMETRY,BLOOD,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+PCR MTB  - SPUTUM ,1000,1000,FLOW CYTOMETRY,SPUTUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PCR MTB - URINE ,1000,1000,FLOW CYTOMETRY,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PCR  MTB - PUS ,1200,1200,FLOW CYTOMETRY,PUS,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PCR MTB - CSF ,1200,1200,FLOW CYTOMETRY,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PCR MTB - PERITONEAL FLUID ,1200,1200,FLOW CYTOMETRY,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PCR FOR MTB PLEURAL FLUID ,1200,1200,FLOW CYTOMETRY,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+PCR  MTB SYNOVIAL FLUID ,1200,1200,FLOW CYTOMETRY,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+PCR MTB - X ,1200,1200,FLOW CYTOMETRY,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PCR MTB - SWAB ,1200,1200,FLOW CYTOMETRY,SWAB,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+5 - HIAA ,500,500,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mg/dl,5,2, ,0,100,0, ,1.0 - 7.0/day,0,0
+ALKAPTONURIA ,250,250,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+BENCE JONES PROTEIN ,200,100,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+CALCIUM / CREATININE RATIO ,100,100,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CHYLURIA ,40,40,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SPOT URINE CREATININE ,200,60,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mgs/dl,4,0,     ,0,700,0, ,,0,0
+FENA ,10,10,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,ml,5,2, ,0,100,0, ,,0,0
+HOMOCYSTINURIA ,250,250,Biochemistry,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HOMOGENSTIC ACID ,250,250,Biochemistry,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+METANEPHRINE ,400,400,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,ML,5,2,  ,0,100,0, ,,0,0
+MICRO ALBUMIN ,300,200,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mgs/L,5,1,     ,0,100,0, ,Negative :  < 18 mgs/L,0,0
+P/C RATIO ,10,10,SPOT URINE ANALYSIS,URINE,Only Numbers,,0, ,4,1, ,0,100,0, ,LESS THAN 1.0,0,0
+PHENYL KETONURIA ,250,250,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PHOSPHORUS ,80,80,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,6,2,   ,0,9999,0, , Adult : 2.5 to 4.5 mg /dl. Child : 4.0 to 7.0 mg /dl.,0,0
+PORPHOBILINOGEN ,100,100,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PORPHYRINS ,100,100,SPOT URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PROTEIN ,60,60,Biochemistry,BLOOD,Only Numbers,,0,G/dl,5,2,     ,0,100,0, ,6.0 - 8.0 G/dl,0,0
+PROTEIN / CREATININE RATIO ,10,10,SPOT URINE ANALYSIS,URINE,Only Numbers,,0, ,5,2,  ,0,100,0, ,Up to 0.4 ,0,0
+SPOT  URINE PROTEIN ,60,60,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mgs/dl,4,2,    ,0,100,0, ,,0,0
+SPOT CREATININE ,60,60,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mgs/dl,5,2,  ,0,100,0, ,,0,0
+VMA ,800,800,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mg/dl,5,2, ,0,30,0, ,1.8 - 7.1/day,0,0
+17-KETOSTEROIDS (Urine) ,800,800,SPOT URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,5,2, ,0,100,0, ,Male   : 9 - 24 Female : 5 - 17,0,0
+UREA CLEARANCE  ,200,200,24 HOURS URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+URINE 17 KETOSTEROIDS ,200,200,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,6,2, ,0,100,0, ,Male : 9 - 24 Female : 5 - 17,0,0
+URINE 5 HIAA ,500,500,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,5,2, ,0,100,0, ,1.0 - 7.0,0,0
+24 Hours URINE CALCIUM ,100,100,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,3,0, ,0,900,0, ,100 - 300,0,0
+URINE CATECHOLAMINE LEVELS ,1000,1000,24 HOURS URINE ANALYSIS,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+URINE CHLORIDE ,500,500,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mEq/day,5,2, ,0,200,0, ,,0,0
+URINE COPPER ,300,300,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,micro gms/day,5,2, ,0,90,0, ,Upto 70,0,0
+URINE CREATININE ,80,80,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,6,0, ,0,8000,0, ,1000 - 2000,0,0
+URINE CREATININE CLEARANCE ,150,150,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,ml/min,6,2,  ,0,100,0, , 80 - 120 ml / minute.,0,0
+URINE FREE CORTISOL ,250,250,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,ug/day,3,0, ,0,170,0, ,30 - 150,0,0
+URINE METANEPHRINE ,900,900,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,ug/mg crea,5,2, ,0,100,0, ,< 1.2,0,0
+URINE OXALATE ,200,200,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,u.mole/day,3,0, ,0,999,0, ,80 - 500,0,0
+URINE PHOSPHROUS ,150,150,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,5,0, ,0,9999,0, , Adult  : 300 - 1000 Child  : 500 - 850,0,0
+URINE POTASSIUM ,150,150,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mEq/day,5,2,  ,0,100,0, ,40 - 80,0,0
+URINE PROTEIN / CREATININE RATIO ,10,10,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,,5,2,   ,0,100,0, ,,0,0
+URINE SODIUM ,150,150,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mEq/day,3,0, ,0,600,0, ,75 - 200,0,0
+URINE UREA ,100,100,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,gms/day,5,2, ,0,100,0, ,Oct-35,0,0
+URINE URIC ACID ,100,100,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,5,2, ,0,900,0, ,200 - 500,0,0
+URINE VMA ,800,800,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,mgs/day,5,2, ,0,100,0, ,1.8 - 7.1,0,0
+URINE ZINC ,300,300,24 HOURS URINE ANALYSIS,URINE,Only Numbers,,0,ug/day,4,0, ,0,2000,0, ,100 - 1000,0,0
+ASCETIC FLUID - CULTURE AND  SENSITIVITY ,150,150,Microbiology,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+ASCETIC FLUID FOR AFB ,70,70,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+BLOOD C & S  [NON ENTRIC ORGANISMS] ,300,200,Microbiology,BLOOD,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+BLOOD C & S [ENTRIC ORGANISMS] ,300,200,Microbiology,BLOOD,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+C.L ASPIRATE FOR GRAM STAIN ,450,450,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+C.L ASPIRATE FOR CULTURE AND SENSITIVITY ,150,150,Microbiology,BLOOD,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+CONJUCTIVAL SWAB FOR (RE) CULTURE AND SENSITIVITY ,150,150,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+CONJUCTIVAL SWAB FOR (LE) CULTURE AND SENSITIVITY ,150,150,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+CONJUCTIVAL SMEAR FOR GRAM STRAIN (LE) ,120,120,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CONJUCTIVAL SMEAR FOR GRAM STAIN      ( RE) ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CSF CULTURE AND SENSITIVITY ,150,150,Microbiology,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+CSF SMEAR FOR GRAM STAIN ,50,50,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+CSF FOR INDIA INK PREPARATION ,50,50,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+DARK GROUND BY PLASMA ,100,100,Microbiology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+DARK GROUN BY URINE ,100,100,Microbiology,URINE,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SWAB CULTURE AND  SENSITIVITY ,200,150,Microbiology,SWAB,Only Texts,,0,,0,0,  ,0,0,0,,,0,0
+EAR LOBE FOR AFB ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+EAR LOBE SMEAR FOR AFB ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+EAR LOBE SMEAR FOR LEPROBACILLI ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+EAR SWAB FOR GRAM STAIN ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+EYE SWAB CULTURE & SENSITIVITY ,150,150,Microbiology,,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+ASCETIC FLUID .,50,50,Microbiology,FLUID,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+FLUID FOR AFB CULTURE ,650,650,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+FUNGUS CULTURE ,250,250,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+FUNGUS C/S ,150,150,Microbiology,PUS,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+HAIR ROUTE FOR FUNGUS ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+LABIAL SWAB CULTURE AND SENSITIVITY ,100,100,Microbiology,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+LEPTOSPIRA (MSAT) ,350,400,Microbiology,BLOOD,Only Texts,,0,,0,0,   Default Value,0,0,0,Formula,,0,0
+LEPTOSPIRAL SEROLOGY ( LPHA - G ),200,200,Microbiology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+LEPTOSPIRA SCREENING  ,400,400,Microbiology,BLOOD,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+MOTION CULTURE AND SENSITIVITY,250,120,Microbiology,STOOL,Only Texts,,0,,0,0,    ,0,0,1,,,0,0
+NAIL SCRAPPING FOR FUNGUS ,70,70,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+NASO GASTRIC ASPIRATION CULTURE AND SENSITIVITY ,100,100,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+NASAL SWAB - CULTURE AND SENSITIVITY ,150,150,Microbiology,,Only Texts,,0,,0,0,  ,0,0,0,,,0,0
+NASAL SMEAR FOR EOSINOPHILS ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+NASAL SMEAR ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+OPERATION THEATRE SWAB CULTURE AND SENSITIVITY ,150,150,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+PAP SMEAR ,350,350,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PERITONEAL FLUID FOR AFB ,80,80,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PLEURAL FLUID CULTURE AND SENSITIVITY ,150,150,Microbiology,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+PLEURAL FLUID FOR AFB ,70,70,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PLEURAL FLUID FOR AFB,50,50,Microbiology,FLUID,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+POST VOIDAL URINE ( AFTER PROSTATIC MASSAGE)  C/S ,250,250,Microbiology,URINE,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+PROSTATIC FLUID FOR GRAM STAIN ,80,80,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PROSTATIC MASSAGE SMEAR CULTURE AND SENSITIVITY ,250,250,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+PUS SMEAR FOR GRAM STAIN ,80,80,Microbiology,PUS,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PUS SMEAR FOR AFB ,100,70,Microbiology,PUS,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+PUS SWAB FOR GRAM STAIN ,50,50,Microbiology,PUS,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PUS SMEAR FOR SULPHUR GRANULES ,50,50,Microbiology,PUS,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+PUS CULTURE AND SENSITIVITY ,300,300,Microbiology,PUS,Only Texts,,0,,0,0,   ,0,0,0,,,0,0
+RECTAL SWAB - CULTURE AND SENSITIVITY ,150,150,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+RECTAL SWAB FOR GRAM STAIN ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+RECTAL SWAB SALMONELLA ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SALIVA CULTURE AND SENSITIVITY ,150,150,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+SALIVA FOR AFB CULTURE ,650,650,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SALIVA FOR AFB CULTURE BY BACTEC METHOD ,650,650,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SEMEN CULTURE AND SENSITIVITY ,150,150,Microbiology,SEMEN,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+SEMEN SMEAR FOR AFB ,50,50,Microbiology,SEMEN,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SKIN SCRAPPING CULTURE AND SENSITIVITY ,150,150,Microbiology,,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+SKIN SCRAPING FOR FUNGUS CULTURE ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SKIN SCRAPPING FOR AFB ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SKIN SCRAPPING FOR FUNGUS ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SKIN SMEAR FOR LEPROBACILLI ,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SKIN SMEAR FOR AFB ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SKIN SMEAR FOR FUNGUS (KOH) ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SMEAR,100,100,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SMEAR FOR GONOCOCCI ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SMEAR FOR NOCARDIA ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SMEAR FOR CRYPTOSPORIDIUM ,50,50,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SMEAR FOR DIPHTHERIA ,75,75,Microbiology,,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+URINE SMEAR FOR FUNGUS ,50,50,Microbiology,,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+SMEAR POST COITAL TEST (PCT) ,250,250,Microbiology,SPUTUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SPUTUM CULTURE AND SENSITIVITY ,150,150,Microbiology,SPUTUM,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+SPUTUM FOR GRAM STAIN ,80,80,Microbiology,SPUTUM,Only Texts,,0, ,0,0,  ,0,0,1, ,,0,0
+SPUTUM FOR MALIGNANT CELL ,200,200,Microbiology,SPUTUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SPUTUM FOR AFB ( 24 HRS CONCENTRATION METHOD) ,100,100,Microbiology,SPUTUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SPUTUM FOR FUNGUS ,450,450,Microbiology,SPUTUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+SPUTUM FOR AFB ,100,100,Microbiology,SPUTUM,Only Texts,,0, ,0,0,   ,0,0,1, ,,0,0
+SPUTUM - AFB CULTURE ,1000,81,Microbiology,SPUTUM,Only Texts,,0, ,0,0,   ,0,0,1, ,,0,0
+SPUTUM SMEAR FOR FUNGAL ELEMENTS ,100,100,Microbiology,SPUTUM,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+THROAT SWAB CULTURE AND  SENSITIVITY ,150,150,Microbiology,SWAB,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+SYNOVIAL FLUID CULTURE AND SENSITIVITY ,150,150,Microbiology,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+SYNOVIAL FLUID FOR AFB CULTURE ,150,150,Microbiology,FLUID,MultiProperty,,1, ,0,0, ,0,0,0, ,,0,0
+SYNOVIAL FLUID FOR AFB ,450,450,Microbiology,FLUID,Only Texts,,0, ,0,0, ,0,0,1, ,,0,0
+Sr.CREATININE,100,80,Biochemistry,BLOOD,Only Numbers,,,mg/dl,4,2,,,,,,Men 0.7-1.2 mgs/dl><Women 0.6-0.9 mgs/dl.,,0
+WHOLE ABDOMEN,100,1000,SEMEN ANALYSIS,SCAN,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+ELECTROLYTES ,300,250,Biochemistry,BLOOD,MultiProperty,,1,mEq/l.,4,1,  ,1,10,0, ,3.5 - 5.5 mEq/l.,0,0
+MOTION COMPLETE ANALYSIS ,100,80,CLINICAL PATHOLOGY,STOOL,MultiProperty,,1, ,0,0,   ,0,0,1, ,,0,0
+URINE COMPLETE ANALYSIS ,60,60,CLINICAL PATHOLOGY,URINE,MultiProperty,,1,,0,0, ,0,0,0,,,0,0
+SEMEN ANALYSIS ,200,100,CLINICAL PATHOLOGY,SEMEN,MultiProperty,,1,,0,0,  ,0,0,0,,,0,0
+SUGAR (R) ,25,25,Biochemistry,BLOOD,Only Numbers,,0,mg/dl,3,0,  ,0,0,0, ,80 - 120 mg/dl,0,0
+LDL / HDL RATIO ,50,50,Biochemistry,BLOOD,Only Numbers,,0, ,4,2, ,0,0,0, ,02-Apr,0,0
+TOTAL PROTEIN ,70,70,Biochemistry,BLOOD,MultiProperty,,1,G/dl,6,2,  ,2,10,1, ,6.0 - 8.0 G/dl,0,0
+URINE CULTURE & SENSITIVITY ,250,250,Microbiology,URINE,Only Texts,,0,,0,0,      ,0,0,0,,,0,0
+X-RAY PARANASAL SINUSES ,60,60,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+X-RAY ABDOMEN AP VIEW ,100,100,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+UPPER ABDOMEN ,250,250,SEMEN ANALYSIS,SCAN,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+OBSTETRICS SCAN ,200,200,SEMEN ANALYSIS,SCAN,Only Texts,,0, ,0,0, ,0,0,0, ,(REAL TIME B MODE ULTRA SONOGRAPHY),0,0
+CUB WITH PELVIC SCAN ,300,200,SEMEN ANALYSIS,SCAN,Only Texts,,0, ,0,0, ,0,0,0, ,(REAL TIME B MODE ULTRASONOGRAPHY),0,0
+KUB WITH PELVIC SCAN ,450,450,SEMEN ANALYSIS,SCAN,Only Texts,,0, ,0,0, ,0,0,0, ,REAL TIME B MODE ULTRASONOGRAPHY,0,0
+MAMMARY GLANDS ,300,300,SEMEN ANALYSIS,SCAN,Only Texts,,0, ,0,0, ,0,0,0, ,REAL TIME B MODE ULTRASONOGRAPHY,0,0
+PNS  ( PARANASAL SINUSES ) ,150,150,X-RAY,X-RAY,Paragraph,,0, ,0,0,  ,0,0,0, ,,0,0
+ABDOMEN AP VIEW ,150,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+ABDOMEN ERECT ,150,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+BASE OF SKULL ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH ANKLES LAT VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH ANKLE AP/LAT VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH CALCANEUM AP/LAT VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH ELBOW AP/LAT ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH FOOT AP/LAT ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,   ,0,0,0, ,,0,0
+BOTH HANDS AP VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH HANDS WITH WRIST AP VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH HEELS LAT VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH KNEE AP VIEW ,150,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,   ,0,0,0, ,,0,0
+BOTH KNEE AP / LAT ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH KNEE LAT VIEW  STANDING,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH LEG AP VIEW,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH SHOULDER AP VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BOTH WRIST AP VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+CERVICAL SPINE AP VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+CERVICAL SPINE AP / LAT ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+CERVICAL SPINE LAT VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+CERVICAL SPINE OBLIQUE VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+CHEST AP VIEW ,300,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0,  ,0,0,0,,,0,0
+CHEST FOR RIBS ,150,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+CHEST  LATERAL VIEW ,300,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0,  ,0,0,0,,,0,0
+SKULL AP VIEW,150,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+SKULL  LATERAL VIEW ,150,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+DORSAL SPINE AP VIEW ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+DORSAL SPINE AP / LATERAL VIEW ,300,300,RADIOLGY,X-RAY,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+HIP JOINT AP / LATERAL VIEW ,150,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0, ,0,0,0,,,0,0
+KUB ,100,100,RADIOLGY,X-RAY,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+BLOOD SUGAR (R) ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,3,0,      ,70,140,0, ,80 -140 mg/dl,0,0
+ECG ,250,150,ECG,ECG,Only Texts,,0, ,0,0,        ,0,0,0, ,,1,0
+BLOOD FOR MF ,50,50,PARASITOLOGY,BLOOD,Only Texts,Slide Method,0, ,0,0, ,0,0,1, ,NEGATIVE,0,0
+MICROFILARIA ( MF ),50,50,Hematology,BLOOD,Only Texts,,0, ,0,0,   ,0,0,1, ,,0,0
+URINE  GRAVINDEX ,100,80,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0,      ,0,0,0, ,,0,0
+L.S.SPINE AP ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+SHOULDER JOINT AP,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+HIP JOINT AP VIEW ,150,150,RADIOLGY,X-RAY,Only Numbers,,0, ,0,0, ,0,0,0, , ,0,0
+X-Ray SHOULDER AP VIEW,400,150,RADIOLGY,X-RAY,Paragraph,,,,,,,,,,,,,0
+RIGHT ELBOW JOINT AP/LAT,300,300,RADIOLGY,X-RAY,Paragraph,,,,,,,,,,,,,0
+SHOULDER JOINT LAT VIEW,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0,  ,0,0,0, , ,0,0
+ELBOW JOINT AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+L.S.SPINE AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+X-Ray FOOT AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+ABDOMEN ERRECT PA VIEW ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+KNEE JOINT AP/ LAT (R),150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+HUMERUS AP/LAT,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+Right FEMUR   AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+THIGH  AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+LIFT WRIST JOINT AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+PELVIS  AP ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+LIFT ELBOW JOINT AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+ FOOT   AP/OBLIQ ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+RIGHT HAND AP/LAT VIEW,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+RIGHT HAND AP/OBLQUE VIEW,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+FORARM AP/LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+RIGHT LEG AP / LAT VIEW,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+URINE ALBUMIN ,30,30,CLINICAL PATHOLOGY,URINE,Paragraph,,0, ,0,0,  ,0,0,0, , ,0,0
+URINE SUGAR (R) ,20,20,CLINICAL PATHOLOGY,URINE,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+DEPOSIT,0,0,CLINICAL PATHOLOGY,URINE,MultiProperty,,1, ,0,0, ,0,0,0, , ,0,0
+BILE SALTS,25,25,CLINICAL PATHOLOGY, ,Paragraph,,0, ,0,0,   ,0,0,1, ,,0,0
+BILE PIGMENTS ,25,25,CLINICAL PATHOLOGY,,Paragraph,,0, ,0,0,  ,0,0,1, ,,0,0
+CHEST PA VIEW ,300,150,RADIOLGY,X-RAY,Paragraph,,0,,0,0,    ,0,0,0,,,0,0
+LIFT ANKLE JOINT  AP \ LAT ,150,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+URINE ROUTINE ANALYSIS ,50,50,CLINICAL PATHOLOGY,URINE,MultiProperty,,1,,0,0,    ,0,0,0,,,0,0
+ESR.,50,50,Hematology,BLOOD,MultiProperty,,1,,0,0,     ,0,0,0,,,0,0
+LIVER FUNCTION TEST.,500,500,Biochemistry,BLOOD,MultiProperty,,1,,0,0, ,0,0,0,,,0,0
+LIPID PROFILE,300,300,Biochemistry,BLOOD,MultiProperty,,1,mgs/dl,12,8,   ,0,0,0, ,< 200 mgs/dl,0,0
+GTT 1 ,175,175,Biochemistry,BLOOD,Table,,1, ,0,0,  ,0,0,1, , ,0,0
+X-Ray ELBOW AP / LAT,400,400,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,,0
+BODY FLUID CULTURE & SENSITIVITY,900,600,Microbiology,,Paragraph,,,,,,,,,,,,,0
+THYROID PROFILE,400,400,ENDOCRINOLOGY,BLOOD,MultiProperty,,1,ug/dl.,6,6,   ,0,0,0, ,4.4 - 10.8 ug/dl.,0,0
+FREE THYROID PROFILE .,400,400,ENDOCRINOLOGY,BLOOD,MultiProperty,,1,uIU/ml,4,2,   ,0,0,0, ,0.26 - 6.16 uIU/ml.,0,0
+MOTION - HANGING DROP FOR V.CHOLERAE,80,80,CLINICAL PATHOLOGY,STOOL,Only Texts,,0, ,0,0,    ,0,0,0, ,,0,0
+WOUND SWAB CULTURE,150,200,Microbiology,PUS,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+CHIKUNGUNYA IGM  (Chromatographic Immuno Assay),500,450,Microbiology,BLOOD,Only Texts,,0, ,0,0,   ,0,0,0, ,,0,0
+SWAB CULTURE /SENSITIVITY .,150,130,Microbiology,URINE,Only Texts,,0, ,0,0,     ,0,0,0, ,,0,0
+URINE DEPOSIT SMEAR FOR GONOCOCCI ,100,75,Microbiology,URINE,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+URINE ACETONE ,50,50,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0,   ,0,0,0, ,,0,0
+URINE TEST ,50,50,CLINICAL PATHOLOGY,URINE,MultiProperty,,1, ,0,0,    ,0,0,0, ,,0,0
+ASCITIC FLUID ANALYSES,300,300,CLINICAL PATHOLOGY,FLUID,Only Texts,,0,,0,0,     ,0,0,0, ,,0,0
+24 HOURS URINE PROTEIN ,150,100,Biochemistry,URINE,MultiProperty,,1,,0,0, ,0,0,0,,,0,0
+24 hours urine analysis ,300,400,Biochemistry,URINE,MultiProperty,,1,ml/minute,5,2,   ,0,0,0, ,80 - 120 ml / minute,0,0
+WESTERN BLOT ASSAY FOR HIV 1 & 11 ,1500,1800,Microbiology,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+DHEA,400,350,IMMUNO ASSAY,BLOOD,Only Numbers,,0,ng/dl.,5,5,   ,5,40,0, ,Male 16.6 - 242.7,0,0
+ANA ( Elisa ) ,300,300,Microbiology,BLOOD,Only Numbers,,0, ,0,0,     ,0,0,0, ,Negative   :   <1.00 Positive     :   >1.00,0,0
+BLOOD GROUP & RH TYPE(CORD BLOOD ) ,50,50,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+BILE ACID,400,500,Biochemistry,BLOOD,Only Numbers,,0,mgs / dl.,0,0, ,0,0,0, ,0 - 6 mgss / dl.,0,0
+SMEAR FOR MF ,150,80,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+LEPTOSPIROSIS IgG ,350,300,SEROLOGY,BLOOD,Only Numbers,,0, ,0,0, ,0,0,0, ,< 9 : Negative 10 - 12 : Equivocal > 12     : Positive,0,0
+BLOOD CULTURE (Ent & Non Ent) ,800,400,Microbiology,BLOOD,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+BLOOD SUGAR (PRE LUNCH),30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,0,0,    ,0,0,0, ,90 - 130 mg/dl 70 or below - Hypoglycemia,0,0
+BLOOD SUGAR (PRE DINNER) ,30,30,Biochemistry,BLOOD,Only Numbers,,0, mgs/dl.,5,0,    ,0,0,0, ,90 - 130 mg / dl 70 or below - Hypoglycemia,0,0
+CHIKUNGUNYA IGG (Chromatographic Immuno assay),350,350,Microbiology,SERUM,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+SMEAR FOR MP ,150,80,Hematology,BLOOD,Only Texts,,0,,0,0,  ,0,0,0,,,0,0
+PHYSICAL EXAMINATION ,50,50,OTHERS,,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+INFLUENZA A & B ,750,750,Microbiology,SWAB,Paragraph,,0, ,0,0,  ,0,0,0, ,SPECIMEN - NASAL This rapid screening test is a chromatographic immuno assay for the differential and qualitative detection of influenza type A and type B antigens taken directly from nasalswab specimen.If the patient has a strong history or severe clin,1,0
+REMARK ,1,1,OTHERS,BLOOD,Only Texts,,0, ,0,0,    ,0,0,1, ,,0,0
+ANTI CCP ,1200,1200,SEROLOGY,BLOOD,Only Numbers,,0,U/mL.,7,0,   ,0,0,0, ,Negative : < 6.25 U/ml Positive   : > 6.25 U/ml,0,0
+BLOOD SUGAR(POST DINNER),30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,0,0,     ,0,0,0, ,Non Diabetic  :80 - 140 mgs/dlDiabetic         : Target   : < 180 mgs/dl                      : < 70 mgs / dl - Hypoglycemia     ,0,0
+PROTEIN FLUID ,50,50,Biochemistry,FLUID,Only Numbers,,0,gms %,6,0, ,0,0,0, ,,0,0
+CSF - ANALYSES,200,50,OTHERS,FLUID,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+G.T.T  ,200,200,Biochemistry,,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+URINE SUGAR (Pre Dinner) ,10,10,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+URINE SUGAR (Post Dinner) ,10,10,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+CREATININE  DT,100,80,Biochemistry,FLUID,Only Numbers,,0,mgs / dl.,4,2,  ,1,20,0, ,,0,0
+VAGINAL SWAB CULTURE AND SENSITIVITY ,150,90,Microbiology,SWAB,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+D-DIMER. ,500,500,Hematology,BLOOD,Only Numbers,,0,ng/ml.,0,0, ,0,0,0, ,Negative : < 200 ng/ml.,0,0
+ANTI TPO Ab ,350,350,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,IU/ml,0,0,   ,0,0,0, ,Negative    : <35.0 U/mlEquivocal   : 35 - 50 U/mlPositive      : >50.0 U/ml,0,0
+SLIT SKIN SMEAR FOR LEPRAE BACILLI ,100,60,Microbiology,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+PEANUT _ SPECIFIC IGE,550,400,DRUGA ASSAY,BLOOD,Only Numbers,,,IU/ml,,,,,,,,Less than 0.35 IU/ml : Negative>0.36 .0.70 IU/ml Low Positive>0.71 . 3.50 IU/ml b: Modereate><POSITIVE: 17.50 IU/ml : High Positive> More than 17.50 IU/ml: Very High Positive.,,0
+TSH ,200,150,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,uIU/ml.,7,0,    ,0,0,0, ,1 - 6 Yrs       :0.85 - 6.5 uIU/ml.< 12 months : 1.00 - 9.10 uIU/ml.Adult            : 0.26 - 6.16 uIU/ml.,0,0
+NS1 Antigen for Dengue by ELISA,1000,1000,SEROLOGY,BLOOD,OD UNIT,,,,,,,,,,,< 9.0 : Negative-9.0 -11:Equivocal>11.0 : Positive,,0
+BLOOD SUGAR ( F ),30,30,Biochemistry,BLOOD,Only Numbers,,0,mg/dl.,0,0,   ,0,0,0, ,70 - 105  mg/dl.,0,0
+BLOOD SUGAR 1 HOUR (50 GRMS POST GLUCOSE ),30,50,Biochemistry,BLOOD,Only Numbers,,0,mgs/ dl.,3,2,     ,0,0,0, ,< 140 mgs / dl.,0,0
+URINE SUGAR 1 HR(50 GMS POST GLUCOSE) ,10,10,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+S.PROTEIN ELECTROPHORESIS,500,500,Biochemistry,BLOOD,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+BLOOD SUGAR 1 hr (75 gms Post glucose) ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl.,0,0,   ,0,0,0, ,< 140 mgs/dl.,0,0
+BLOOD SUGAR (PP 1 Hrs)  ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,5,0, ,0,1000,0, ,80 - 140 mgs/dl,0,0
+THYROID PROFILE,350,350,ENDOCRINOLOGY,BLOOD,MultiProperty,,,Microgm/dl,5,4,,,,,,Adult :4.6 - 10.9 > Born - 3 days : 11.8-22.6>4days-5 yrs : 7.2-16.6>5 - 15Years :5.6 - 12.5> Pregnancy 1st Trimester : 4.6-16.5 2ed Trimester :4.6 -18.5,,0
+THYROID PROFILE (B),350,350,ENDOCRINOLOGY,BLOOD,MultiProperty,,1,Microgm/dl,5,4,  ,0,1000,0, ,Born - 4 days  :14.0 - 28.4 microgm/dl1 - 11 months : 7.2 - 15.7 microgm/dl1 - 9 Years     : 6.0 - 14.2 microgm/dl,0,0
+25 Hydroxy VITAMIN D,1200,1000,IMMUNO ASSAY,SERUM,Only Numbers,,,ng/ml,6,5,,,,,,"< 10 : Severe deficiency>10 - 19 : Mild Dificiency>20 - 50 : Optimum Level>51-80 : Incresed risk of Hyperclciuria>80 : Toxicity Possible,",,0
+VITAMIN D3 ,1000,300,IMMUNO ASSAY,SERUM,Only Numbers,,0,ng/ml,6,5,               ,1,1000,0, ,10 - 65 ng/ml,0,0
+INSULIN (RANDOM)  ,250,150,ENDOCRINOLOGY,SERUM,Only Numbers,,0,uIU/ml,5,3, ,1,100,0, ,8 - 180 uIU/ml,0,0
+GTT  ( 75 gms Glucose ),200,200,Biochemistry,BLOOD,Paragraph,,0, ,0,0,    ,0,0,0, ,,0,0
+BLOOD SUGAR (PP- 1 1/2 HRS) ,30,20,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl.,0,0,   ,0,0,0, ,< 140 mgs/dl,0,0
+SPOT URIC ACID ,80,50,Biochemistry,URINE,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+GTT  ( 100 gms Glucose ) ,200,200,Biochemistry,SERUM,Paragraph,,0, ,0,0,  ,0,0,0, ,,0,0
+BLOOD SUGAR 1 hr (100 gms Post glucose)  ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,5,3, ,1,1000,0, ,<140 mgs/dl,0,0
+BLOOD SUGAR 2 hr (75 gms Post glucose)  ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs/dl,5,3, ,1,1000,0, ,<140 mgs / dl,0,0
+Right Foot AP/LAT View,300,250,RADIOLGY,X-RAY,Paragraph,,,,,,,,,,,,,0
+URINE FOR HEMATURIA ,100,50,CLINICAL PATHOLOGY,URINE,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+SMEAR STUDY ,150,150,Hematology,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+URINE SUGAR 2 hr ( 75 gms Post glucose) ,20,20,CLINICAL PATHOLOGY,URINE,Only Texts,,0, ,0,0,  ,0,0,0, ,,0,0
+MOTION ROUTINE ,100,40,CLINICAL PATHOLOGY,STOOL,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+CHEST PA VIEW.  ,300,150,RADIOLGY,X-RAY,Paragraph,,0, ,0,0,  ,0,0,0, ,,0,0
+PROGESTERONE. ,300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/ml,7,4,   ,1,10000,0, ,Male: 0.20 -1.40 ng/ml  Female: Follicular Phase : 0.20 -1.50 ng/ml Ovulation Phase: 0.8 - 3.0 ng/mlLuteal Phase : 1.7 -27.0 ng/ml  Postmenopausal : 0.10 -0.80 ng/ml Pregnant Femals: 1st Trimester : 11.22 -90.00 ng/ml 2nd Trimester : 25.55 -89.40 n,0,0
+DENGUE  NS1 Antigen ,700,500,SEROLOGY,BLOOD,Only Texts,,0,,0,0,  ,0,0,0,,,0,0
+TESTOSTERONE (Total),300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,ng/dl,6,3,   ,1,10000,0, ,Male      : 2.4 - 9.0 ng/dl Female  : 0.06 - 0.90 ng/dl Child  1 Year  : 0.12 - 0.21 ng/dl1 - 6 Years : 0.03 - 0.32 ng/dl7 - 12 Years : 0.03 - 0.68 ng/dl 13 - 17 Years : 0.28 - 11.1 ng/dl,0,0
+ANTI CCP. ,1200,1200,SEROLOGY,SERUM,Only Numbers,,0,U/ml,6,3,  ,1,10000,0, ,Negative   : < 0.90 U/mlEquivocal  : 0.91 - 1.10 U/mlPositive     :  >=1.11 U/ml,0,0
+ESTRADIOL(E2). ,350,350,SEROLOGY,SERUM,Only Numbers,,0,pg/ml,5,3,    ,10,10000,0, ,Adult (Females):Menstruating Females :(By day in cycle relative to LH peak)Follicular Phase: (-12 phase)   :  11 - 69 pg/ml(-4 phase)     :  63 - 165 pg/mlMidcycle Peak: (-1 Day)   :  140 - 526 pg/mlLuteal Phase: (+2 Days ) : 33 - 150 pg/ml(+6 D,0,0
+BLOOD SUGAR(POST LUNCH) ,30,30,Biochemistry,SERUM,Only Numbers,,0,mgs/dl,10,3,  ,10,1000,0, ,80 -140 mgs/dl,0,0
+ImmunoglobulinE(IgE).,400,400,IMMUND ASSAY,BLOOD,Only Numbers,,0,IU/ml,6,3, ,10,10000,0, ,1 - 4 Days  :  < 1.55 Days - 12 Months : < 151 - 5 Years : < 606 - 9 Years : < 9010 - 16 Years : < 200More than 16 Years : < 100,0,0
+Urine Protein / Creatinine Ratio  ,1,2,SPOT URINE ANALYSIS,URINE,Only Numbers,,0, ,0,0, ,0,0,0, ,Up to 0.2,0,0
+SPOT URINE UREA ,100,50,SPOT URINE ANALYSIS,URINE,Only Texts,,0,mgs/dl,0,0,  ,0,0,0, ,,0,0
+TSH.,200,150,ENDOCRINOLOGY,SERUM,Only Texts,,0, ,0,0,   ,0,0,0, ,1 - 6 Yrs       :0.85 - 6.5 uIU/ml.< 12 months : 1.00 - 9.10 uIU/ml.Adult            : 0.26 - 6.16 uIU/ml.,0,0
+URINE CYTOLOGY ,600,600,HISTOPATHOLOGY,URINE,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+GRAM`S STAIN ,250,200,Microbiology,FLUID,Paragraph,,0, ,0,0, ,0,0,0, , ,0,0
+ASCITIC FLUID ,500,250,Microbiology,FLUID,Paragraph,,0, ,0,0, ,0,0,0, ,"Normal    :  0 - 30 U/LPositive   :  >30 U/LADA levels are raisedin tuberculosis, Infectious Mononucleosis, Viral Hepatitis and Malignancy.",0,0
+HSV (1 & 11) IgG ,600,500,Microbiology,SERUM,Only Numbers,,0,EIU/ml.,5,3,     ,0,0,0, ,Negative : <25Positive   : >35,0,0
+HSV (1 & 11) IgM ,600,500,Microbiology,SERUM,Only Numbers,,0,EIU/ml.,5,3,  ,0,0,0, ,Negative : <35Positive   : >45,0,0
+FSH. ,200,110,ENDOCRINOLOGY,SERUM,Only Numbers,,0,mIU/ml,5,3, ,0,1000,0, ,"Female:, Follicular Phase    : 2.5 - 10.0,Midcycle Peak     : 3.5 - 33.5,Luteal Phase        : 1.5 - 9.0Post Menopausal : 23.0 - 116.0Pregnancy           :  <0.30Male                     : 1.5 - 18.0",0,0
+(Sample collected & sent),0,0,,,Only Texts,,0, ,0,0,   ,0,0,0, ,,0,0
+REMARK ,0,0,Microbiology,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+REMARK ,0,0,Biochemistry,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, , ,0,0
+REMARK ,0,0,OTHERS,BLOOD,Only Texts,,0, ,0,0, ,0,0,0, ,,0,0
+BLOOD SUGAR (POST BREAKFAST) ,30,30,Biochemistry,BLOOD,Only Numbers,,0,mgs / dl.,3,2, ,0,0,0, ,< 140 mgs /dl.,0,0
+ANTI MICROSOMAL ANTIBODY (AMA) ,800,750,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,IU/ml.,5,5,  ,0,0,0, ,Negative < 34 Iu/ml Positive   > 34 Iu/ml.,0,0
+ANTI THYROGLOBULIN ANTIBODY (ATG) ,800,750,ENDOCRINOLOGY,BLOOD,Only Numbers,,0,IU/ml.,5,5,  ,0,0,0, ,Negative    :  < 225 Iu/ml.Equivocal   :  225 - 325 Iu/ml.Positive      :   > 325 Iu/ml.,0,0
+BP ,10,10,OTHERS,,Only Texts,,0,,0,0, ,0,0,0,,,0,0
+DHEA - SULPHATE ,500,500,IMMUND ASSAY,BLOOD,Only Numbers,,0,ng/dl.,0,0, ,0,0,0, ,Male 25 - 34 yrs - 167.9 - 591.9,0,0
+1DIFFERENTIAL COUNT. ,80,60,Hematology,BLOOD,MultiProperty,,1, ,0,0,  ,0,0,0, ,,0,0
+UREA,80,80,Biochemistry,URINE,Only Numbers,,0,mgs/dl.,0,0,     ,0,0,0, ,15 - 39 mgs/dl,0,0
+CROSS MATCHING ,50,50,,,Only Numbers,,0, ,0,0,   ,0,0,0, , ,0,0
+S.CREATININE ,80,80,Biochemistry,URINE,Only Numbers,,0,mgs/dl.,4,0,  ,0,0,0, ,Men:0.7-1.2 mgs/dl Women:0.6-0.9 mgs/dl,0,0
+HBs Ag ,200,200,SEROLOGY,BLOOD,Paragraph,,0, ,0,0, ,0,0,0, ,,0,0
+URINE SPOT CALCIUM ,200,200,SPOT URINE ANALYSIS,URINE,Only Numbers,,0, ,0,0, ,0,0,0, ,,0,0
+TRIPLE SCREENING ,2000,1500,Biochemistry,,Only Numbers,,0, ,0,0,  ,0,0,0, , ,0,0
+SAMPLE PICK LIST\,1200,0,,,Only Texts,,0, ,0,0, ,0,0,1, ,100-200mm,0,0
+CBC,300,0,Hematology,,Only Numbers,,0, ,0,0, ,0,0,0, , ,0,0
+URINE Ph-,80,60,CLINICAL PATHOLOGY,URINE,MultiProperty,,,,,,,,,,,,0,0
+URINE SPECIFIC GRAVITY,50,10,CLINICAL PATHOLOGY,URINE,Only Texts,,,,,,,,,,,,0,0
+URINE NITRITE,20,20,CLINICAL PATHOLOGY,URINE,Only Texts,,,,,,,,,,,,0,0
+URINE SPOT SODIUM,150,150,Biochemistry,URINE,Only Numbers,,,mEq/l.,,,,,,,,,0,0
+lift leg AP /LAT VIEW,400,300,RADIOLGY,CSF-ANALYSIS,Only Numbers,,,,,,,,,,,,0,0
+CYTOLOGY,400,300,HISTOPATHOLOGY,,Only Numbers,,,,,,,,,,,,0,0
+KNEE JOINT AP/ LAT (L),300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+RIGHT SOULDER AP /LET,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+BLOOD SUGAR1 1 1/2 hr (Post 75 gms glucose),30,30,Biochemistry,BLOOD,Only Numbers,,,mgs/dl,,,,,,,,<140 mgs / dl,0,0
+ABSOLUTE NEUTROPHIL COUNT (ANC),100,100,Hematology,BLOOD,Only Numbers,,,/CUMM,,,,,,,,2500/7000 cumm,0,0
+ESTRADIOL(E). ,300,300,ENDOCRINOLOGY,BLOOD,Only Numbers,,,pg/ml,4,,,,,,,Male : ND .44 pg/ml>Menstruating Females:(by day in cycle relative to LH Peak)Follicular Phase(-15 to -2days)-21 -251> midcycle(-1 to +1 days)-38 -649> Luteal Phase(+2 to+15 days)21 - 312 Postmenopausal Females (Untreated ): ND - 32.2 pg/ml,0,0
+ANA (Elisa),400,350,ENDOCRINOLOGY,BLOOD,Only Numbers,,,u/ml,,,,,,,,Less than 10 U/ml.,0,0
+House Visit,100,150,OTHERS,BLOOD,Only Numbers,,,,,,,,,,,,0,0
+HS CRP,500,500,Biochemistry,BLOOD,Only Numbers,,,mgs/dl,,,,,,,,up to 1.0 mgs/dl,0,0
+Anti CCP,1200,1200,SEROLOGY,BLOOD,Only Numbers,,,U/ml,,,,,,,,up to 17.0 u/ml,0,0
+FREE TESTOSTERONE ,600,400,ENDOCRINOLOGY,BLOOD,Only Numbers,,,pg/ml,,,,,,,,Male : 15-50 pg/ml>Female : 0-18 pg/ml,0,0
+BLOOD SUGAR (POST LUNCH) 2HRS,30,30,Biochemistry,BLOOD,Only Numbers,,,,,,,,,,,90-130 mg/dl>70 or below-Hypoglycemia,0,0
+URINE SUGAR (POST LUNCH),10,10,CLINICAL PATHOLOGY,URINE,Only Numbers,,,,,,,,,,,,0,0
+RUBELLA IgM ,200,200,TORCH PANEL,BLOOD,Only Numbers,,,IU/ml,,,,,,,,Negative < 35: Positive > 45,0,0
+URINE BIO CHEMISTRY,200,150,Biochemistry,URINE,MultiProperty,,,,,,,,,,,,0,0
+VOLUME,1,1,CLINICAL PATHOLOGY,SERUM,Only Numbers,,,ml.,5,5,,,,,,1.0 to 0.5 ml.,0,0
+LIQUEFACTION TIME,1,1,CLINICAL PATHOLOGY,SEMEN,Only Texts,,,minutes,,,,,,,,<30 minutes,0,0
+URINE  FOR AFB,300,300,Microbiology,URINE,Only Texts,,,,,,,,,,,,0,0
+REACTION,1,1,CLINICAL PATHOLOGY,SEMEN,Only Texts,,,,,,,,,,,,0,0
+VISCOSITY,1,1,CLINICAL PATHOLOGY,SEMEN,Only Texts,,,,,,,,,,,,0,0
+MOTILITY,,,CLINICAL PATHOLOGY,SEMEN,Only Numbers,,,,,,,,,,,,0,0
+TOTAL SPERM COUNT,1,1,CLINICAL PATHOLOGY,SEMEN,Only Numbers,,,million/ml,6,6,,,,,,60 -150 million / ml.,0,0
+APNORMAL,1,1,,SEMEN,Only Numbers,,,%,6,6,,,,,,,0,0
+MORPHOLOGY,1,1,CLINICAL PATHOLOGY,SEMEN,MultiProperty,,,,,,,,,,,,0,0
+PUS CELLS,1,1,CLINICAL PATHOLOGY,SEMEN,Only Texts,,,,,,,,,,,,0,0
+RBCs,1,1,CLINICAL PATHOLOGY,SEMEN,Only Texts,,,,,,,,,,,,0,0
+FRUCTOSE,1,1,CLINICAL PATHOLOGY,SEMEN,Only Texts,,,,,,,,,,,,0,0
+RIGHT ANKLE AP/LATERAL VIEW,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+LIFT HAND AP/LATERAL VIEW,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+LIFT HAND AP/OBLIQUE VIEW,400,400,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+LIFT HAND HEAL CALCANEUM,400,400,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+RIGHT CALCANEUM,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+LEFT UPPER ARM,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+GCT(Glucose challenge test - 75 gms),150,150,Biochemistry,BLOOD,Only Numbers,,,mg/dl,,,,,,,,<140 mg/dl.,0,0
+URINE OCCULT BLOOD,50,50,CLINICAL PATHOLOGY,URINE,Only Texts,,,,,,,,,,,,0,0
+ACE-Angio tensin Converting,800,800,IMMUND ASSAY,BLOOD,Only Numbers,,,U/I,5,2,,,,,,"7-52 U/I < Increased levels are found in Active Pulmonary sacoidosis, Gaucher disease, Diabetes Mellitus, Hyperthyroidism and Leprody><Decreased Levels are found in Neoplasms and in  Anorexia nervosa associated with Hypothyroidism.",0,0
+SCRUB TYPUS ANTIBODY,1200,1200,SEROLOGY,BLOOD,Only Texts,,,,,,,,,,,,0,0
+TOE AP/LAT VIEW,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+ANTI HBs IGG,350,350,SEROLOGY,SERUM,Paragraph,,,,,,,,,,,,0,0
+24 hours Urine Microalbuminuria,400,400,Biochemistry,URINE,Paragraph,,,,,,,,,,,,0,0
+URINE PREGNANCY TEST,100,100,CLINICAL PATHOLOGY,URINE,Paragraph,,,,,,,,,,,,0,0
+GASTRIC ACID SMEAR FOR AFB,300,300,Microbiology,FLUID,Paragraph,,,,,,,,,,,,0,0
+ANA ( IF METHOD),900,900,Microbiology,BLOOD,Paragraph,,,,,,,,,,,,0,0
+BLOOD SUGAR (1 1/2 HRS-POST DINNER),30,30,Biochemistry,BLOOD,Only Numbers,,,mgs / dl.,,,,,,,,<140 mgs / dl,0,0
+EAR SWAB CULTURE AND SENTIVITY,250,250,Microbiology,PUS,Only Numbers,,,,,,,,,,,,0,0
+HBSAG,300,300,SEROLOGY,BLOOD,Only Numbers,,,,,,,,,,,(CUT OSF INDEEX 0 . 10,0,0
+HBSAG (Elisa),300,300,SEROLOGY,BLOOD,Only Texts,,,,,,,,,,,( cut of - 0.80,0,0
+Pleural fluid Analaysis,500,500,Biochemistry,FLUID,Paragraph,,,,,,,,,,,,0,0
+Pleural fluid for cytology,1000,1000,Biochemistry,FLUID,Only Texts,,,,,,,,,,,,0,0
+HV,250,250,,BLOOD,Only Numbers,,,,,,,,,,,,0,0
+FSH / LH Ratio,100,100,ENDOCRINOLOGY,BLOOD,Only Numbers,,,,,,,,,,,upto 1.1,0,0
+RIGHT PALM AP/LAT VIEW,300,300,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+DENGUE Ab Igm (Elisa),800,800,SEROLOGY,BLOOD,Only Texts,,,,,,,,,,,,0,0
+DENGUE Ab Igg (Elisa),800,800,SEROLOGY,BLOOD,Only Numbers,,,,,,,,,,,,0,0
+OCCULT BLOOD,80,80,CLINICAL PATHOLOGY,STOOL,Paragraph,,,,,,,,,,,,0,0
+U ELECTROLYTES,400,400,,URINE,MultiProperty,,,,,,,,,,,,0,0
+.HBSAG.,300,300,SEROLOGY,SERUM,Only Texts,,,,,,,,,,,(CUT OSF INDEEX 0 . 10),0,0
+EBV VCA IgM,500,500,Microbiology,SERUM,Only Numbers,,,,,,,,,,,<0.12 Negative. >0.12 to0.19 Equivocal. >0.19 positive,0,0
+TRANSFERRIN SATURATION,350,350,Microbiology,BLOOD,Paragraph,,,,,,,,,,,15 TO 45 %,0,0
+TRANSFERRIN SATURATION,350,350,Microbiology,BLOOD,Only Numbers,,,%,,4,,,,,,15 TO 45 %,0,0
+RIGHT WIRST AP/LAT VIEW,300,200,RADIOLGY,X-RAY,Only Numbers,,,,,,,,,,,,0,0
+HIV,250,250,SEROLOGY,BLOOD,Only Numbers,,,,,,,,,,,,0,0
+HIV I&II,250,250,SEROLOGY,BLOOD,Only Texts,,,,,,,,,,,,0,0
+ANTI HCV,300,300,SEROLOGY,BLOOD,Only Texts,,,,,,,,,,,,0,0
+NT - Pro BNP,2500,2500,IMMUND ASSAY,BLOOD,Only Numbers,,,pg/ml,,,,,,,,"Ref : <75 years - Up to 125 pg/ml : >75 years Up to 450 pg/ml,",0,0
+ANT HAV,400,400,SEROLOGY,BLOOD,Only Numbers,,,,,,,,,,,,0,0
+ANT HAV,400,400,SEROLOGY,BLOOD,Only Texts,,,,15,101,,,,,,< 10 Negative: > 10 Positive,0,0
+Anti CARDIOLIPIN IgM ,500,500,IMMUND ASSAY,BLOOD,Only Numbers,,,MpL/ml,,,,,,,,,0,0
+HBSAG (CMIA),300,275,SEROLOGY,BLOOD,Only Numbers,,,,,,,,,,,CUT OF INDDEX - Reactive : >1.0 : Nonreactive: <1.0,0,0
+INSULIN (PP)  ,400,600,ENDOCRINOLOGY,BLOOD,Only Numbers,,,,,,,,,,,18 - 180 micro IU/ml,0,0

@@ -15,11 +15,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
 import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -59,10 +57,6 @@ public class TestMaster extends JFrame {
 	private JTextField textField_propertyName;
 	private JTextField textField_propertyType;
 	private JTable table;
-	private JComboBox<String> comboBox_Department;
-	private JComboBox<String> comboBox_Sample;
-	private JComboBox<String> comboBox_TypeOfTest;
-	private JComboBox<String> comboBox_Method;
 	private JCheckBox chckbxIsSubHead;
 	private JCheckBox chckbxIsPicklist;
 	private JCheckBox chckbxIsCulture;
@@ -80,6 +74,15 @@ public class TestMaster extends JFrame {
 	private JButton btnSearch;
 	private JButton btnExit;
 	private JButton btnUpdate;
+
+	private JTextField textField_Department;
+	private JTextField textField_Sample;
+	private JTextField textField_TypeofTest;
+	private JTextField textField_Method;
+	private JButton btnDepartment;
+	private JButton btnSample;
+	private JButton btnTypeofTest;
+	private JButton btnMethod;
 
 	DatabaseConnection dataBase = new DatabaseConnection();
 	static TestMaster frameTestMaster = new TestMaster();
@@ -196,10 +199,10 @@ public class TestMaster extends JFrame {
 							textField_testName.setText(set.getString(2));
 							textField_rate1.setText(set.getString(3));
 							textField_rate2.setText(set.getString(4));
-							comboBox_Department.setSelectedIndex(set.getInt(5));
-							comboBox_Sample.setSelectedIndex(set.getInt(6));
-							comboBox_TypeOfTest.setSelectedItem(set.getObject(7));
-							comboBox_Method.setSelectedIndex(set.getInt(8));
+							textField_Department.setText(set.getString(5));
+							textField_Sample.setText(set.getString(6));
+							textField_TypeofTest.setText(set.getString(7));
+							textField_Method.setText(set.getString(8));
 							chckbxIsSubHead.setSelected(set.getBoolean(9));
 							textField_units.setText(set.getString(10));
 							textField_digits.setText(set.getString(11));
@@ -236,6 +239,7 @@ public class TestMaster extends JFrame {
 					PreparedStatement statement = dataBase.getConnection().prepareStatement(sql);
 					ResultSet set = statement.executeQuery();
 					table.setModel(DbUtils.resultSetToTableModel(set));
+
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
@@ -303,7 +307,7 @@ public class TestMaster extends JFrame {
 		textField_defaultValue = new JTextField();
 		textField_defaultValue.setEditable(false);
 		textField_defaultValue.setColumns(10);
-		textField_defaultValue.setBounds(123, 56, 311, 32);
+		textField_defaultValue.setBounds(123, 56, 303, 32);
 		panel_2.add(textField_defaultValue);
 
 		JLabel lblRangenormal = new JLabel("Range(Normal)");
@@ -333,7 +337,7 @@ public class TestMaster extends JFrame {
 		textField_rangeUpper = new JTextField();
 		textField_rangeUpper.setEditable(false);
 		textField_rangeUpper.setColumns(10);
-		textField_rangeUpper.setBounds(341, 99, 84, 32);
+		textField_rangeUpper.setBounds(341, 99, 85, 32);
 		panel_2.add(textField_rangeUpper);
 
 		JLabel lblFormula = new JLabel("Formula");
@@ -357,19 +361,19 @@ public class TestMaster extends JFrame {
 		textField_formula = new JTextField();
 		textField_formula.setEditable(false);
 		textField_formula.setColumns(10);
-		textField_formula.setBounds(114, 142, 312, 32);
+		textField_formula.setBounds(117, 142, 309, 32);
 		panel_2.add(textField_formula);
 
 		textField_validation = new JTextField();
 		textField_validation.setEditable(false);
 		textField_validation.setColumns(10);
-		textField_validation.setBounds(114, 185, 314, 32);
+		textField_validation.setBounds(117, 185, 309, 32);
 		panel_2.add(textField_validation);
 
 		textField_tblCaption = new JTextField();
 		textField_tblCaption.setEditable(false);
 		textField_tblCaption.setColumns(10);
-		textField_tblCaption.setBounds(117, 228, 311, 30);
+		textField_tblCaption.setBounds(117, 228, 309, 30);
 		panel_2.add(textField_tblCaption);
 
 		chckbxIsPicklist = new JCheckBox("Is PickList");
@@ -465,15 +469,6 @@ public class TestMaster extends JFrame {
 		textField_testName.setBounds(263, 13, 275, 32);
 		panel_1.add(textField_testName);
 
-		comboBox_TypeOfTest = new JComboBox<String>();
-		comboBox_TypeOfTest.setEnabled(false);
-		comboBox_TypeOfTest.setEditable(true);
-		comboBox_TypeOfTest.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		comboBox_TypeOfTest.setModel(new DefaultComboBoxModel<String>(
-				new String[] { "Only Numbers", "Only Texts", "Paragraph", "Table", "Date", "Time", "MultiProperty" }));
-		comboBox_TypeOfTest.setBounds(652, 60, 188, 32);
-		panel_1.add(comboBox_TypeOfTest);
-
 		JLabel lblTypeOfTest = new JLabel("Type of Test");
 		lblTypeOfTest.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		lblTypeOfTest.setBounds(555, 59, 87, 32);
@@ -506,36 +501,6 @@ public class TestMaster extends JFrame {
 		lblSample.setBounds(290, 59, 59, 32);
 		panel_1.add(lblSample);
 
-		comboBox_Department = new JComboBox<String>();
-		comboBox_Department.setEnabled(false);
-		comboBox_Department.setEditable(true);
-		comboBox_Department.setModel(new DefaultComboBoxModel<String>(
-				new String[] { "HAEMATOLOGY", "BIOCHEMISTRY", "SEROLOGY", "ENDOCRINOLOGY", "IMMUNO ASSAY",
-						"TUMOUR MARKERS", "TORCH PANEL", "DRUG ASSAY", "FLOW CYTOMETRY", "SPOT URINE ANALYSIS",
-						"24 HOURS URINE ANALYSIS", "CLINICAL PATHOLOGY", "HISTOPATHOLOGY", "MICROBIOLOGY", "RADIOLOGY-",
-						"SEMEN ANALYSES", "X-RAY", "RADIOLOGY", "ECG", "PARASITOLOGY", "BIO-CHEMISTRY", "OTHERS" }));
-		comboBox_Department.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		comboBox_Department.setBounds(84, 60, 188, 32);
-		panel_1.add(comboBox_Department);
-
-		comboBox_Method = new JComboBox<String>();
-		comboBox_Method.setEditable(true);
-		comboBox_Method.setEnabled(false);
-		comboBox_Method.setModel(new DefaultComboBoxModel<String>(new String[] { "Slide Method", "Tube Method",
-				"QBC Method", "CLIA", "IFCC Method", "BROMOCRESOL GREEN" }));
-		comboBox_Method.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		comboBox_Method.setBounds(84, 103, 224, 32);
-		panel_1.add(comboBox_Method);
-
-		comboBox_Sample = new JComboBox<String>();
-		comboBox_Sample.setEnabled(false);
-		comboBox_Sample.setEditable(true);
-		comboBox_Sample.setModel(new DefaultComboBoxModel<String>(new String[] { "BLOOD", "URINE", "STOOL", "SEMEN",
-				"PUS", "SPUTUM", "STONE", "CSF ANALYSIS", "FLUID", "SERUM", "SWAB", "SCAN", "X-RAY", "ECG" }));
-		comboBox_Sample.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		comboBox_Sample.setBounds(359, 60, 186, 32);
-		panel_1.add(comboBox_Sample);
-
 		JLabel lblRate_2 = new JLabel("Rate 2");
 		lblRate_2.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblRate_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
@@ -555,6 +520,58 @@ public class TestMaster extends JFrame {
 		table_1 = new JTable();
 		scrollPane_1.setViewportView(table_1);
 
+		btnDepartment = new JButton("Click");
+		btnDepartment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnDepartment.setEnabled(false);
+		btnDepartment.setFocusPainted(false);
+		btnDepartment.setBounds(219, 61, 62, 32);
+		panel_1.add(btnDepartment);
+
+		btnSample = new JButton("Click");
+		btnSample.setEnabled(false);
+		btnSample.setFocusPainted(false);
+		btnSample.setBounds(483, 60, 62, 32);
+		panel_1.add(btnSample);
+
+		btnTypeofTest = new JButton("Click");
+		btnTypeofTest.setEnabled(false);
+		btnTypeofTest.setFocusPainted(false);
+		btnTypeofTest.setBounds(795, 59, 62, 32);
+		panel_1.add(btnTypeofTest);
+
+		btnMethod = new JButton("Click");
+		btnMethod.setEnabled(false);
+		btnMethod.setFocusPainted(false);
+		btnMethod.setBounds(229, 103, 62, 32);
+		panel_1.add(btnMethod);
+
+		textField_Department = new JTextField();
+		textField_Department.setEditable(false);
+		textField_Department.setBounds(67, 61, 213, 32);
+		panel_1.add(textField_Department);
+		textField_Department.setColumns(10);
+
+		textField_Sample = new JTextField();
+		textField_Sample.setEditable(false);
+		textField_Sample.setColumns(10);
+		textField_Sample.setBounds(352, 60, 193, 32);
+		panel_1.add(textField_Sample);
+
+		textField_TypeofTest = new JTextField();
+		textField_TypeofTest.setEditable(false);
+		textField_TypeofTest.setColumns(10);
+		textField_TypeofTest.setBounds(652, 59, 205, 32);
+		panel_1.add(textField_TypeofTest);
+
+		textField_Method = new JTextField();
+		textField_Method.setEditable(false);
+		textField_Method.setColumns(10);
+		textField_Method.setBounds(77, 103, 213, 32);
+		panel_1.add(textField_Method);
+
 		JPanel panel_5 = new JPanel();
 		panel_5.setBounds(10, 11, 702, 82);
 		contentPane.add(panel_5);
@@ -566,10 +583,14 @@ public class TestMaster extends JFrame {
 				textField_testName.setEditable(true);
 				textField_rate1.setEditable(true);
 				textField_rate2.setEditable(true);
-				comboBox_Department.setEnabled(true);
-				comboBox_Sample.setEnabled(true);
-				comboBox_TypeOfTest.setEnabled(true);
-				comboBox_Method.setEnabled(true);
+				textField_Department.setEditable(true);
+				textField_Sample.setEditable(true);
+				textField_TypeofTest.setEditable(true);
+				textField_Method.setEditable(true);
+				btnDepartment.setEnabled(true);
+				btnSample.setEnabled(true);
+				btnTypeofTest.setEnabled(true);
+				btnMethod.setEnabled(true);
 				textField_units.setEditable(true);
 				textField_digits.setEditable(true);
 				textField_decimal.setEditable(true);
@@ -618,10 +639,14 @@ public class TestMaster extends JFrame {
 				textField_testName.setEditable(true);
 				textField_rate1.setEditable(true);
 				textField_rate2.setEditable(true);
-				comboBox_Department.setEnabled(true);
-				comboBox_Sample.setEnabled(true);
-				comboBox_TypeOfTest.setEnabled(true);
-				comboBox_Method.setEnabled(true);
+				textField_Department.setEditable(true);
+				textField_Sample.setEditable(true);
+				textField_TypeofTest.setEditable(true);
+				textField_Method.setEditable(true);
+				btnDepartment.setEnabled(true);
+				btnSample.setEnabled(true);
+				btnTypeofTest.setEnabled(true);
+				btnMethod.setEnabled(true);
 				textField_units.setEditable(true);
 				textField_digits.setEditable(true);
 				textField_decimal.setEditable(true);
@@ -684,10 +709,14 @@ public class TestMaster extends JFrame {
 						textField_testName.setEditable(false);
 						textField_rate1.setEditable(false);
 						textField_rate2.setEditable(false);
-						comboBox_Department.setEnabled(false);
-						comboBox_Sample.setEnabled(false);
-						comboBox_TypeOfTest.setEnabled(false);
-						comboBox_Method.setEnabled(false);
+						textField_Department.setEditable(false);
+						textField_Sample.setEditable(false);
+						textField_TypeofTest.setEditable(false);
+						textField_Method.setEditable(false);
+						btnDepartment.setEnabled(false);
+						btnSample.setEnabled(false);
+						btnTypeofTest.setEnabled(false);
+						btnMethod.setEnabled(false);
 						textField_units.setEditable(false);
 						textField_digits.setEditable(false);
 						textField_decimal.setEditable(false);
@@ -714,10 +743,10 @@ public class TestMaster extends JFrame {
 						textField_testName.setText(null);
 						textField_rate1.setText(null);
 						textField_rate2.setText(null);
-						comboBox_Department.setSelectedIndex(0);
-						comboBox_Sample.setSelectedIndex(0);
-						comboBox_TypeOfTest.setSelectedIndex(0);
-						comboBox_Method.setSelectedIndex(0);
+						textField_Department.setText(null);
+						textField_Sample.setText(null);
+						textField_TypeofTest.setText(null);
+						textField_Method.setText(null);
 						textField_units.setText(null);
 						textField_digits.setText(null);
 						textField_decimal.setText(null);
@@ -795,10 +824,14 @@ public class TestMaster extends JFrame {
 				textField_testName.setEditable(false);
 				textField_rate1.setEditable(false);
 				textField_rate2.setEditable(false);
-				comboBox_Department.setEnabled(false);
-				comboBox_Sample.setEnabled(false);
-				comboBox_TypeOfTest.setEnabled(false);
-				comboBox_Method.setEnabled(false);
+				textField_Department.setEditable(false);
+				textField_Sample.setEditable(false);
+				textField_TypeofTest.setEditable(false);
+				textField_Method.setEditable(false);
+				btnDepartment.setEnabled(false);
+				btnSample.setEnabled(false);
+				btnTypeofTest.setEnabled(false);
+				btnMethod.setEnabled(false);
 				textField_units.setEditable(false);
 				textField_digits.setEditable(false);
 				textField_decimal.setEditable(false);
@@ -824,10 +857,10 @@ public class TestMaster extends JFrame {
 				textField_testName.setText(null);
 				textField_rate1.setText(null);
 				textField_rate2.setText(null);
-				comboBox_Department.setSelectedIndex(0);
-				comboBox_Sample.setSelectedIndex(0);
-				comboBox_TypeOfTest.setSelectedIndex(0);
-				comboBox_Method.setSelectedIndex(0);
+				textField_Department.setText(null);
+				textField_Sample.setText(null);
+				textField_TypeofTest.setText(null);
+				textField_Method.setText(null);
 				textField_units.setText(null);
 				textField_digits.setText(null);
 				textField_decimal.setText(null);
@@ -872,10 +905,14 @@ public class TestMaster extends JFrame {
 				textField_testName.setEditable(false);
 				textField_rate1.setEditable(false);
 				textField_rate2.setEditable(false);
-				comboBox_Department.setEnabled(false);
-				comboBox_Sample.setEnabled(false);
-				comboBox_TypeOfTest.setEnabled(false);
-				comboBox_Method.setEnabled(false);
+				textField_Department.setEditable(false);
+				textField_Sample.setEditable(false);
+				textField_TypeofTest.setEditable(false);
+				textField_Method.setEditable(false);
+				btnDepartment.setEnabled(false);
+				btnSample.setEnabled(false);
+				btnTypeofTest.setEnabled(false);
+				btnMethod.setEnabled(false);
 				textField_units.setEditable(false);
 				textField_digits.setEditable(false);
 				textField_decimal.setEditable(false);
@@ -902,10 +939,10 @@ public class TestMaster extends JFrame {
 				textField_testName.setText(null);
 				textField_rate1.setText(null);
 				textField_rate2.setText(null);
-				comboBox_Department.setSelectedIndex(0);
-				comboBox_Sample.setSelectedIndex(0);
-				comboBox_TypeOfTest.setSelectedIndex(0);
-				comboBox_Method.setSelectedIndex(0);
+				textField_Department.setText(null);
+				textField_Sample.setText(null);
+				textField_TypeofTest.setText(null);
+				textField_Method.setText(null);
 				textField_units.setText(null);
 				textField_digits.setText(null);
 				textField_decimal.setText(null);
@@ -991,41 +1028,51 @@ public class TestMaster extends JFrame {
 		panel_5.add(btnUpdate);
 		btnUpdate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				// String id = textField_id.getText();
-				// String testName = textField_testName.getText();
-				// String rate1 = textField_rate1.getText();
-				// String rate2 = textField_rate2.getText();
-				// String department = comboBox_Department.getName();
-				// String sample = comboBox_Sample.getName();
-				// String typeoftest = comboBox_TypeOfTest.getName();
-				// String method = comboBox_Method.getName();
-				// String unit = textField_units.getText();
-				// String digit = textField_digits.getText();
-				// String decimal = textField_decimal.getText();
-				// String defaultValue = textField_defaultValue.getText();
-				// String rangeLower = textField_rangeLower.getText();
-				// String rangeUpper = textField_rangeUpper.getText();
-				// String formula = textField_formula.getText();
-				// String validation = textField_validation.getText();
-				// String tblCaption = textField_tblCaption.getText();
-				// String isPicklist = chckbxIsPicklist.getActionCommand();
-				// String isCulture = chckbxIsCulture.getActionCommand();
-				// String isSpecial = chckbxIsSpecial.getActionCommand();
-				// String isSubHead = chckbxIsSubHead.getActionCommand();
-				// String propertyName = textField_propertyName.getText();
-				// String propertyType = textField_propertyType.getText();
-				// String normalValue = editorPane_normalValue.getText();
+				String id = textField_id.getText();
+				String testName = textField_testName.getText();
+				String rate1 = textField_rate1.getText();
+				String rate2 = textField_rate2.getText();
+				String department = textField_Department.getText();
+				String sample = textField_Sample.getText();
+				String typeoftest = textField_TypeofTest.getText();
+				String method = textField_Method.getText();
+				String unit = textField_units.getText();
+				String digit = textField_digits.getText();
+				String decimal = textField_decimal.getText();
+				String defaultValue = textField_defaultValue.getText();
+				String rangeLower = textField_rangeLower.getText();
+				String rangeUpper = textField_rangeUpper.getText();
+				String formula = textField_formula.getText();
+				String validation = textField_validation.getText();
+				String tblCaption = textField_tblCaption.getText();
+				String isPicklist = chckbxIsPicklist.getActionCommand();
+				String isCulture = chckbxIsCulture.getActionCommand();
+				String isSpecial = chckbxIsSpecial.getActionCommand();
+				String isSubHead = chckbxIsSubHead.getActionCommand();
+				String propertyName = textField_propertyName.getText();
+				String propertyType = textField_propertyType.getText();
+				String normalValue = editorPane_normalValue.getText();
 
-				String sql = "";
-				executeQuery(sql, "Inserted");
+				String sql = "update test set testName ='" + testName + "' rate1 = '" + rate1 + "' rate2 ='" + rate2
+						+ "' depatement ='" + department + "' sample ='" + sample + "' inputType ='" + typeoftest
+						+ "' methodType ='" + method + "' isSubTest ='" + isSubHead + "' unit ='" + unit + "' digit ='"
+						+ digit + "' decimal_1 ='" + decimal + "' defaultValue_1 ='" + defaultValue + "' minValue_1 ='"
+						+ rangeLower + "' maxValue_1 ='" + rangeUpper + "' isPicklist ='" + isPicklist + "' formula ='"
+						+ formula + "' normalValue ='" + normalValue + "' isSpecial ='" + isSpecial + "' isCulture ='"
+						+ isCulture + "' where id ='" + id + "'";
+				executeQuery(sql, "Updated");
 
 				textField_testName.setEditable(false);
 				textField_rate1.setEditable(false);
 				textField_rate2.setEditable(false);
-				comboBox_Department.setEnabled(false);
-				comboBox_Sample.setEnabled(false);
-				comboBox_TypeOfTest.setEnabled(false);
-				comboBox_Method.setEnabled(false);
+				textField_Department.setEditable(false);
+				textField_Sample.setEditable(false);
+				textField_TypeofTest.setEditable(false);
+				textField_Method.setEditable(false);
+				btnDepartment.setEnabled(false);
+				btnSample.setEnabled(false);
+				btnTypeofTest.setEnabled(false);
+				btnMethod.setEnabled(false);
 				textField_units.setEditable(false);
 				textField_digits.setEditable(false);
 				textField_decimal.setEditable(false);
@@ -1052,10 +1099,10 @@ public class TestMaster extends JFrame {
 				textField_testName.setText(null);
 				textField_rate1.setText(null);
 				textField_rate2.setText(null);
-				comboBox_Department.setSelectedIndex(0);
-				comboBox_Sample.setSelectedIndex(0);
-				comboBox_TypeOfTest.setSelectedIndex(0);
-				comboBox_Method.setSelectedIndex(0);
+				textField_Department.setText(null);
+				textField_Sample.setText(null);
+				textField_TypeofTest.setText(null);
+				textField_Method.setText(null);
 				textField_units.setText(null);
 				textField_digits.setText(null);
 				textField_decimal.setText(null);
@@ -1093,5 +1140,6 @@ public class TestMaster extends JFrame {
 		btnUpdate.setBackground(Color.WHITE);
 
 		table("testName", "test");
+
 	}
 }

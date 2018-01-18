@@ -56,6 +56,7 @@ public class Index {
 		initialize();
 		database.database();
 		createTable();
+		// importFile();
 	}
 
 	public void createTable() {
@@ -85,8 +86,8 @@ public class Index {
 				+ "netAmount int(11),receivedAmount int(11),balance int(11),date varchar(255))";
 
 		String testTable = "create table test(id int(11)AUTO_INCREMENT PRIMARY KEY,"
-				+ "testName varchar(255),rate1 int(11),rate2 int(11),departmentNo varchar(255),"
-				+ "sampleNo varchar(255),inputType varchar(255),methodType varchar(255),"
+				+ "testName varchar(255),rate1 int(11),rate2 int(11),department varchar(255),"
+				+ "sample varchar(255),inputType varchar(255),methodType varchar(255),"
 				+ "isSubTest varchar(255),unit varchar(255),digit varchar(255),decimal_1 varchar(255),"
 				+ "defaultValue_1 varchar(255),minValue_1 varchar(255),maxValue_1 varchar(255),"
 				+ "isPicklist varchar(255),formula varchar(255),normalValue text,"
@@ -104,6 +105,8 @@ public class Index {
 
 		String testSample = "create table testSample (id int(11)AUTO_INCREMENT PRIMARY KEY,"
 				+ "sampleName varchar(255))";
+
+		String testType = "create table testType (id int(11)AUTO_INCREMENT PRIMARY KEY," + "typeName varchar(255))";
 		try {
 			DatabaseMetaData dmd = connection.getConnection().getMetaData();
 			ResultSet set = dmd.getTables(null, null, "doctor", null);
@@ -178,11 +181,51 @@ public class Index {
 				statement.executeUpdate(testSample);
 				System.out.println("testSample table created");
 			}
+			ResultSet set9 = dmd.getTables(null, null, "testType", null);
+			if (set9.next()) {
+				System.out.println("testType table already created");
+			} else {
+				Statement statement = connection.getConnection().createStatement();
+				statement.executeUpdate(testType);
+				System.out.println("testType table created");
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
+	// private void importFile() {
+	// // TODO Auto-generated method stub
+	//
+	// String fileName = "src/file/lab1.csv";
+	// File file = new File(fileName);
+	// try {
+	// BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+	// String line;
+	// while ((line = bufferedReader.readLine()) != null) {
+	// String[] value = line.split(",");
+	// String sql = "insert into
+	// test(id,testName,rate1,rate2,departmentNo,sampleNo,inputType,methodType,isSubTest,unit,digit,decimal_1,defaultValue_1,minValue_1,maxValue_1,isPicklist,formula,normalValue,isSpecial,isCulture"
+	// + " values('" + value[0] + "','" + value[1] + ",,'" + value[2] + "','" +
+	// value[3] + "','"
+	// + value[4] + "','" + value[5] + "','" + value[6] + "','" + value[7] + "','" +
+	// value[8] + "','"
+	// + value[9] + "','" + value[10] + "','" + value[11] + "','" + value[12] +
+	// "','" + value[13]
+	// + "','" + value[14] + "','" + value[15] + "','" + value[16] + "','" +
+	// value[17] + "','"
+	// + value[18] + "','" + value[19] + "')";
+	// Statement statement = connection.getConnection().createStatement();
+	// statement.executeUpdate(sql);
+	// System.out.println("file has been updated successfully");
+	// bufferedReader.close();
+	// }
+	// } catch (Exception e) {
+	// // TODO: handle exception
+	// e.printStackTrace();
+	// }
+	// }
 
 	/**
 	 * Initialize the contents of the frame.

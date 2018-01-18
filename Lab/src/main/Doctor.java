@@ -114,7 +114,6 @@ public class Doctor extends JFrame {
 			int set = statement.executeUpdate(query);
 			if (set == 1) {
 				JOptionPane.showMessageDialog(null, "Data " + message + "Successfully");
-
 				refreshTable();
 			} else {
 				JOptionPane.showMessageDialog(null, "Data Not " + message + "Successfully");
